@@ -1,0 +1,25 @@
+/*  Переменные со шрифтами  */
+$accent-font: 'Inter-Regular','PT Sans', sans-serif;
+$regular-font: 'Inter-Regular','PT Sans', sans-serif;
+$bold-font: 'Inter-Bold','PT Sans', sans-serif;
+$semi-font: 'Inter-Medium','PT Sans', sans-serif;
+$light-font: 'Inter-Inter-LightBETA','PT Sans', sans-serif;
+$air-font: 'Aeroport','PT Sans', sans-serif;
+$krisis-medium-font: 'KrisisSansMedium','PT Sans', sans-serif;
+$secodary-font: 'Literata-Regular', 'PT Sans', sans-serif;
+
+
+/*  Переменные с гарнитурами шрифтов  */
+// $pt-bold: 700;
+
+
+/*  Основные цвета  */
+$main-color: #FF342B;
+$black-color: #161D21;
+
+/* Разрешения */
+$min-large: 1920px;
+$min-medium: 1280px;
+$min-small: 1024px;
+$min-tablet: 700px;
+$mobile: $min-tablet;

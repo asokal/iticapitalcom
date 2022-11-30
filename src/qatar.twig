@@ -1,0 +1,56 @@
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'regional' %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Qatar', 'bgPrefix': 'qt', 'wrapModifier': 'private-clients-banner__wrap--center'} %}
+	<div class="regional__wrapper g-typography">
+		<h2 class="g-page-subtitle">
+			IT Global Solutions started its operations in early 2020.
+		</h2>
+
+		<p>
+			ITI Group recently registered a legal entity in Qatar and opened an office which will focus on fintech development, corporate finance and fund-raising opportunities for Da Vinci and ITI Group in the MENA region.
+		</p>
+
+		<p>
+			The growing MENA region offers fund-raising opportunities and ITI Group can develop products and solutions that would be attractive to people in the region. ITI Group will work to design its approach and marketing material to meet these goals.
+		</p>
+
+		<p>
+			ITI Group will also look at developing blockchain and crypto products and the various fintech and technology solutions to meet the demand for alternatives to bank debt and various trading platforms in the MENA market.
+		</p>
+
+		<div class="regional__contacts">
+			<h3 class="g-title-semi">Contacts</h3>
+
+			<span>IT Global Solutions LLC</span>
+
+			<span>
+				Suite 412, 41st Floor, Marriott Marquis Renaissance Hotel, West Bay, <br>
+				Doha Qatar, MENA Region, P.O. Box: 22979
+			</span>
+
+			<a href="#" class="g-link">+974 559 60604</a>
+		</div>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	<footer class="footer footer--short">
+		<div class="footer__index-disclaimer">
+			<div class="g-typography">
+				<p>
+					ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+				</p>
+
+				<p>
+					Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+				</p>
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			© iticapital.com, 1994—2020
+		</div>
+	</footer>
+{% endblock %}

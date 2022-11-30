@@ -1,0 +1,24 @@
+.digital-assets__title
+{
+	background-color: #FAFAFA;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	h1
+	{
+		font-family: $secodary-font;
+		font-weight: 500;
+		font-size: 56px;
+		line-height: 73px;
+		color: #333333;
+	}
+}
+@media(max-width: 1024px)
+{
+	.digital-assets__title
+	{
+		h1
+		{
+			font-size: 46px;
+		}
+	}
+}

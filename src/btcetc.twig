@@ -1,0 +1,116 @@
+{# news-list.twig #}
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'private' %}
+{% set callback = true %}
+{% set thirdLine = true %}
+
+{% block page %}
+	<div class="container btcetc__container">
+		<div class="private__left private__left--first">
+			<div class="btcetc-grey-text">
+				Information for Investors
+			</div>
+			<h2 class="g-page-subtitle">
+				Redemption - BTCetc Bitcoin Exchange Traded Crypto (BTCE)
+			</h2>
+			<div class="table-name">
+				Trading information:
+			</div>
+			<table class="btcetc-table">
+				<tr>
+					<th>Symbol</th>
+					<th>ISIN</th>
+					<th class="btcetc__col-mob">RIC</th>
+					<th class="btcetc__col-mob">SEDOL</th>
+					<th>Listing Venue</th>
+					<th>Bloomberg</th>
+				</tr>
+				<tr>
+					<td>BTCE</td>
+					<td>DE000A27Z304</td>
+					<td class="btcetc__col-mob">BTCE.DE</td>
+					<td class="btcetc__col-mob">BMWSLR9</td>
+					<td>XETRA</td>
+					<td>BTCE:GR</td>
+				</tr>
+			</table>
+			<div class="btcetc__text btcetc__text--mb">
+				ITI Capital has been appointed as Authorised Participant (AP) by ETC Issuance GmbH, the Issuer of BTCE, to offer redemption services to investors. APs are licensed and regulated financial intermediaries, and as such apply strict anti-money laundering controls and due diligence.
+			</div>
+			<div class="btcetc-grey-text btcetc-grey-text--mb">
+				In order to redeem their units of BTCE for Bitcoin through ITI Capital,holders of BTCE must:
+			</div>
+			<div class="btcetc__text">
+				Onboard as a client of ITI Capital for no charge by contacting <a href="mailto:digital@iticapital.com">digital@iticapital.com</a>.
+			</div>
+			<div class="btcetc__quote">
+				Onboarding means submitting to ITI Capital's KYC/AML verification process, which is required before BTCE holders can open an account where to which they can transfer their BTCE securities. This usually takes between 3-5 business days to complete.
+			</div>
+			<div class="btcetc__text">
+				BTCE holders who have completed onboarding and who wish to redeem their BTCE for Bitcoin must email <a href="mailto:digital@iticapital.com">digital@iticapital.com</a> from their registered email address, stating their account number and number of units they wish to redeem. T+2 settlement can be achieved if instruction is received prior to midday (12.00) London time.
+			</div>
+			<div class="btcetc__quote">
+				Please note: BTCE holders wishing to redeem can receive Bitcoin either into their own wallet, or keep Bitcoin in custody with ITI Capital.
+			</div>
+		</div>
+		<div class="private__right">
+			<div class="sticky-card">
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">Dealing and customer service</div>
+					<a href="#" class="g-link">
+						+44 (0) 20 7562 8001
+					</a>
+				</div>
+
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">E-mail</div>
+					<a href="#" class="g-link">
+						digital@iticapital.com
+					</a>
+				</div>
+
+				<div class="sticky-card__btn-group">
+					<a href="#" class="g-btn">
+						Open an Account
+					</a>
+
+					<a href="#" class="sticky-card__login">
+						Log In
+					</a>
+				</div>
+			</div>
+			<div class="sticky-card sticky-card--table">
+				<div class="btcetc-grey-text btcetc-grey-text--mb">
+					Redemption Fees:
+				</div>
+				<table>
+					<tr>
+						<th>Transaction Fee</th>
+						<th>Minimum Fee</th>
+					</tr>
+					<tr>
+						<td>10bps (0,1%)</td>
+						<td>EUR 100.00</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container btcetc__container btcetc__container--pt">
+		<div class="private__left">
+			
+		</div>
+		<div class="private__right">
+			<div class="btcetc-grey-text btcetc-grey-text--mb">
+				Useful Resources:
+			</div>
+			<a class="btcetc__link" href="assets/pdf/BTCetc - Redemption Information Document_31aug2020.pdf">Download Redemption <br>Information Document &darr;</a>
+			<a class="btcetc__link" href="https://btc-etc.com/product/#cryptocurrencyetps">Go to the Issuer's website &rarr;</a>
+			<a class="btcetc__link" href="https://www.boerse-frankfurt.de/en/etf/de000a27z304-etc-issuance-gmbh-0-000">View BTCE on Xetra &rarr;</a>
+		</div>
+	</div>
+	<div class="btcetc-grey-text btcetc-grey-text--mb btcetc-grey-text--center">
+		Investors are advised to read the Redemption information Document:
+	</div>
+	<a style="text-align:center;" href="assets/pdf/BTCetc - Redemption Information Document_31aug2020.pdf" class="btcetc__button">Download Document</a>
+{% endblock %}

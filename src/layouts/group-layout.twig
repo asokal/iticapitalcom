@@ -1,0 +1,65 @@
+{# layout.twig #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<meta name="viewport" content="width=device-width">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="HandheldFriendly" content="true"/>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport min-width=375px" content="min-width=375, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+	<script src="js/main.min.js"></script>
+	<title>Инвестиции в IPO — ITI Capital</title>
+	<!-- <meta name="description" content="ITI Capital собирает заявки клиентов на участие в IPO Saudi Aramco. Заработайте на крупнейшем IPO в мире!"> -->
+	<meta property="og:url" content="https://iticapital.ru/ipo/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Инвестиции в IPO — ITI Capital">
+	<!-- <meta property="og:image" content="img/assets/OpenGraph-Aramco.png"> -->
+	<!-- <meta property="og:description" content="ITI Capital собирает заявки клиентов на участие в IPO Saudi Aramco. Заработайте на крупнейшем IPO в мире!"> -->
+	<meta property="og:site_name" content="ITI Capital">
+	<meta property="og:locale" content="ru_RU">
+</head>
+<body class="{{bodyModify}}">
+	{% include "../blocks/header.twig" with {headerModify} %}
+	<div class="wrapper">
+		{% block page %}{% endblock %}
+	</div>
+
+	<footer class="footer footer--group" id="footer">
+		<div class="g-section-title">
+			contacts
+		</div>
+
+		<div class="container">
+			<div class="footer-iti-agency">
+				<div class="g-page-subtitle">
+					Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, United Kingdom
+				</div>
+
+				<div class="footer-iti-agency__links">
+					<a href="tel:+4402038898333" class="footer-iti-agency__link">+44 (0) 20 3889 8333</a>
+					<a href="#" class="footer-iti-agency__link">info@iticapital.com</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			© iticapital.com, 1994—2020
+		</div>
+	</footer>
+
+	<div class="_overlay overlay" onclick="o2.popups.closePopup()"></div>
+	{% include "../blocks/popup-alert-covid.twig" %}
+	{% include "../blocks/popup-alert-svs-securities.twig" %}
+	{# {% include "../blocks/popup-alert-fraud.twig" %} #}
+	{% include "../blocks/cookie.twig" %}
+</body>
+</html>

@@ -1,0 +1,240 @@
+{% block header %}
+	<header class="header _header {{headerModify}}">
+		<div class="header-warning"><b>Risk Warning: All trading involves risk.</b> Clients may lose significantly more than they invest and therefore your capital may be&nbsp;at&nbsp;risk.</div>
+		<div class="header__logo">
+			{% if headerModify and headerModify == 'header--tech-digital' %}
+				<img src="img/digital-tech-logo.svg" alt="logo">
+			{% else %}
+				{% if headerModify and headerModify == 'header--group'%}
+					<img src="img/logo-group.svg" alt="logo">
+				{% else %}
+					<img src="img/logo.svg" alt="logo">
+				{% endif %}
+			{% endif %}
+		</div>
+
+		<nav class="header-nav _headerNav">
+			<div class="header-nav__mobile-buttons">
+				<a href="#" class="header__log-in">Log In</a>
+
+				<a href="#" class="header__sign-in">Open an Account</a>
+			</div>
+
+			<ul class="header-nav__list header-nav__list--top">
+				<li class="active">
+					<a href="#home" onclick="o2.scrollTo('#home')">Home</a>
+				</li>
+
+				<li>
+					<a href="#about" onclick="o2.scrollTo('#about')">About</a>
+				</li>
+
+				<li>
+					<a href="#our-people" onclick="o2.scrollTo('#our-people')">Our People</a>
+				</li>
+
+				<li>
+					<a href="#news" onclick="o2.scrollTo('#news')">News</a>
+				</li>
+
+				<li>
+					<a href="#careers" onclick="o2.scrollTo('#careers')">Careers</a>
+				</li>
+
+				<li>
+					<a href="#footer" onclick="o2.scrollTo('#footer')">Contacts</a>
+				</li>
+
+				<li>
+					<a href="#">ITI Group</a>
+				</li>
+			</ul>
+			{% if headerModify != 'header--tech-digital' %}
+			<hr class="header-nav__devider">
+
+			<ul class="header-nav__list">
+				<li class="expands _hover-overlay">
+					<a href="#">Private Clients</a>
+
+					<div class="header-dropdown">
+						<div class="header-dropdown__inner">
+							<div class="header-props">
+								<a href="#" class="header-prop">
+									<div class="header-prop__icon">
+										{% include '../../img/advisory.svg' %}
+									</div>
+
+									<div class="header-prop__bottom">
+										<div class="header-prop__title">Advisory -></div>
+										<div class="header-prop__descr">
+											Our tailor-made passive and active investment portfolios provide a complete piece of mind to our customers
+										</div>
+									</div>
+								</a>
+
+								<a href="#" class="header-prop">
+									<div class="header-prop__icon">
+										{% include '../../img/Desktop.svg' %}
+									</div>
+
+									<div class="header-prop__bottom">
+										<div class="header-prop__title">Trading -></div>
+										<div class="header-prop__descr">
+											Sophisticated trading technology built by traders for traders
+										</div>
+									</div>
+								</a>
+
+								<a href="#" class="header-prop">
+									<div class="header-prop__icon">
+										{% include '../../img/fx.svg' %}
+									</div>
+
+									<div class="header-prop__bottom">
+										<div class="header-prop__title">FX -></div>
+										<div class="header-prop__descr">
+											Trade margin FX on majors, minors and most exotic currency pairs via MT4
+										</div>
+									</div>
+								</a>
+
+								<a href="#" class="header-prop">
+									<div class="header-prop__icon">
+										{% include '../../img/margin.svg' %}
+									</div>
+
+									<div class="header-prop__bottom">
+										<div class="header-prop__title">Margin Lending -></div>
+										<div class="header-prop__descr">
+											Investment loan that lets you borrow money to invest in shares
+										</div>
+									</div>
+								</a>
+
+								<a href="#" class="header-prop">
+									<div class="header-prop__icon">
+										{% include '../../img/deposit.svg' %}
+									</div>
+
+									<div class="header-prop__bottom">
+										<div class="header-prop__title">Deposit & Withdrawal -></div>
+										<div class="header-prop__descr">
+											Bank transfer deposits may be made in GBP, EUR or USD
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="expands">
+					<a href="#">Institutional Clients</a>
+				</li>
+			</ul>
+			{% endif %}
+		</nav>
+
+		<div class="header__right">
+			<a href="#" class="header__log-in">Log In</a>
+
+			<a href="#" class="header__sign-in">Open an Account</a>
+
+			{% include "./lang-switch.twig" %}
+
+			<a onclick="o2.toggleNav(this)" class="header__burger" href="javascript:void(0);">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		{% if instModify == 'header-dropdown--short' %}
+			<div class="header-dropdown {{instModify}}">
+				<div class="header-dropdown__inner">
+					<ul class="header-dropdown__list">
+						<li>
+							<a href="#inst-0" onclick="o2.scrollTo('#inst-0')">
+								Global Direct <br>Electronic Access
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-2" onclick="o2.scrollTo('#inst-2')">
+								Global High-Touch<br>Trading
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-3" onclick="o2.scrollTo('#inst-3')">
+								Foreign<br>Exchange
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-4" onclick="o2.scrollTo('#inst-4')">
+								Securities<br>Financing
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-5" onclick="o2.scrollTo('#inst-5')">
+								Structured <br>Product
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-6" onclick="o2.scrollTo('#inst-6')">
+								Research<br>and Analysis
+							</a>
+						</li>
+
+						<li>
+							<a href="#inst-7" onclick="o2.scrollTo('#inst-7');">
+								Digital<br>Assets
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		{% endif %}
+
+		<div class="header-alerts">
+			<div class="header-alert">
+				<span class="header-alert__text">
+					A message from ITI Capital on operations during COVID-19.
+				</span>
+
+				<span class="g-link" onclick="o2.popups.showPopup('#popup-alert-covid');">
+					Read the message →
+				</span>
+
+				<div onclick="o2.closeAlert(this, 'acceptedCovid')" class="header-alert__close">
+					<img src="./img/close.svg" alt="">
+				</div>
+			</div>
+
+			{# <div class="header-alert">
+				<div onclick="o2.closeAlert(this, 'acceptedFraud')" class="header-alert__close">
+					<img src="./img/close.svg" alt="">
+				</div>
+
+				Fraudsters look for new ways to scam consumers. <span class="g-link" onclick="o2.popups.showPopup('#popup-alert-fraud');">Read the message →</span>
+			</div> #}
+
+			<div class="header-alert">
+				<span class="header-alert__text">
+					Message for Clients of SVS Securities.
+				</span>
+
+				<span class="g-link" onclick="o2.popups.showPopup('#popup-alert-svs-securities');">
+					Read the message →
+				</span>
+
+				<div onclick="o2.closeAlert(this, 'acceptedSvsSecurities')" class="header-alert__close">
+					<img src="./img/close.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+{% endblock %}

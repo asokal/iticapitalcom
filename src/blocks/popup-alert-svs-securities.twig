@@ -1,0 +1,61 @@
+{% extends "../layouts/default-popup.twig" %}
+
+{% set popupId = 'popup-alert-svs-securities' %}
+{% set popupClass = 'popup-alert' %}
+
+{% block popupConent %}
+<h2 class="g-page-subtitle">
+	Message for Clients of SVS Securities
+</h2>
+<div class="popup-alert__message">
+	<div class="g-typography">
+		<p>As you are aware, the administrators of SVS have chosen ITI Capital Limited (“ITI”) to act as the single regulated broker to facilitate the return of your client assets and client money in an orderly and coordinated manner.</p>
+		<p>As part of this process, the vast majority of the SVS clients will become clients of ITI from the 11th of June, 2020. Your Client Statement made available to you by the Joint Special Administrators on 18 May 2020 identified which of your clients assets and/or client money are proposed to be transferred to ITI.</p>
+		<p>We will contact you individually with specific instructions on how to register for an account at ITI in due course. At this stage we are not in possession of your personal information or current holdings and therefore we are not currently in a position to assist you. We expect this to occur around the mid- July timeframe. Any query which you may have in the meantime should continue to be directed towards the Joint Special Administrators either by telephone on 0203 457 4871 or by email at <a href="mailto:svs@leonardcurtis.co.uk" class="g-link" target="_blank">svs@leonardcurtis.co.uk</a> </p>
+	</div>
+	<ol>
+		<li>Login with your credentials provided to you in your welcome email.</li>
+		<li>Press the “view holdings” button next to your account(s) to view its respective holdings/summary.</li>
+		<li>At this point you can choose to onboard as a client of ITI, withdraw funds or move your account to another broker.</li>
+	</ol>
+	<div class="popup-alert__parts">
+		<div class="popup-alert__part">
+			<p><b>How to onboard as a client</b></p>
+			<ol>
+				<li>At the bottom of your holdings list, you will be presented with a Red bar which reads “Do you want to transfer your current positions to ITI?” Please select accept all relevant declarations and press “Yes”.</li>
+				<li>Enter your personal information and press “Next”</li>
+				<li>Enter additional trading information and click “Next”</li>
+				<li>If you select Forex you will need to complete an appropriateness test</li>
+				<li>You will now need to complete the Online identity verification test, this will require you to have a camera on your device, valid government issued photo ID  and Bank statement/Utility bill dated within the last 3 months.</li>
+				<li>You will be presented with a screen provided by HooYu (third-party vendor selected by ITI to verify your information electronically), please click agree and continue.</li>
+				<li>Take a selfie using the online tool and the camera on your device.</li>
+				<li>The second half of the screen requires you to upload the government issued photo id, please select the ID you are uploading and upload following the onscreen instructions.</li>
+				<li>The third part of the screen involves you having to upload your bank statement/utility bill dated within the last three months.</li>
+				<li>In case you face any issue while uploading and verification of the documents, you can click on "I have nothing else to add" And then click on the Cancel Request.</li>
+				<li>Note: Our System tries to auto validate the documents online, in case of any issue or additional information required, the system will show a prompt. Click on “Cancel Request”</li>
+			</ol>
+			<p>
+				There will be an Upload button enabled below to proceed with the uploading necessary documents without HooYu.
+			</p>
+			<ol start="12">
+				<li>After either the documents are submitted online via HooYu or manually uploaded due to failed validation, our Account Management team will approve your account if everything is ok and you will receive an email to confirm this.</li>
+				<li>In due course you will receive access credentials to the online trading platform.</li>
+				<li>Once you receive access to the online platform, it may take around a week for your assets to become visible on the online platform as we need to perform a line by line reconciliation before and after the assets are moved onto the platform to ensure accuracy. We appreciate your patience during this period.</li>
+			</ol>
+		</div>
+		<div class="popup-alert__part">
+			<p><b>How to withdraw</b></p>
+			<ol>
+				<li>At the bottom of your holdings list, you will be presented with a Red bar which reads “Do you want to transfer your current positions to ITI?” Please select “No”.</li>
+				<li>ITI will then approve your withdrawal request.</li>
+				<li>You are then able to login to the portal and click “submit closure form”</li>
+				<li>Please fill in the relevant details of the transfer.</li>
+				<li>Download, sign and upload the form and any relevant identity documentation required by us to authorize the transfer</li>
+				<li>If you are also transferring assets (stocks), please ask your Broker to initiate a transfer request and send it to&nbsp;<a data-auth="NotApplicable" href="mailto:accountmanagement@iticapital.com" rel="noopener noreferrer" target="_blank">accountmanagement@iticapital.com</a></li>
+				<li>If it is a cash transfer to your own bank account, we will action this immediately</li>
+				<li>If it is a broker transfer, we will action when instructions are received from your existing broker as described in point 6.</li>
+			</ol>
+		</div>
+	</div>
+</div>
+{% endblock %}

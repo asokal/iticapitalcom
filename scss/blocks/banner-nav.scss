@@ -1,0 +1,164 @@
+.banner-nav
+{
+	padding-bottom: 80px;
+	&._digital
+	{
+		.banner-nav-bg
+		{
+			background-image: url("../img/digital-banner.jpg");
+		}
+		.banner-nav-main__item
+		{
+			&._active,
+			&:hover
+			{
+				color: #333;
+				border-bottom-color: #333333;
+			}
+		}
+		.banner-nav-descr-wr
+		{
+			&:before
+			{
+				background: #6387AB;
+			}
+		}
+	}
+}
+.banner-nav-bg
+{
+	min-height: 440px;
+	background-image: url("../img/tech-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner-nav-main-wr
+{
+	border-bottom: 1px solid #F2F2F2;
+	margin-bottom: 64px;
+}
+.banner-nav-main
+{
+	height: 48px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.banner-nav-main__logo
+{
+	position: relative;
+	max-width: 335px;
+	max-height: 153px;
+	height: 153px;
+	width: auto;
+	top: -53px;
+	img
+	{
+		width: 100%;
+		object-fit: contain;
+	}
+}
+.banner-nav-main__item
+{
+	margin-right: 42px;
+	font-size: 14px;
+	line-height: 150%;
+	padding-bottom: 16px;
+	color: #656565;
+	transition: all .125s;
+	border-bottom: 1px solid transparent;
+	&:last-child
+	{
+		margin-right: 0;
+	}
+	&._active,
+	&:hover
+	{
+		color: #EC231A;
+		border-bottom-color: #EC231A;
+	}
+}
+.banner-nav-descr-wr
+{
+	position: relative;
+	&:before
+	{
+		content: '';
+		position: absolute;
+		background: #EC231A;
+		width: 80px;
+		height: 2px;
+		top: 23px;
+		left: 0;
+	}
+}
+.banner-nav-descr
+{
+	font-size: 26px;
+	line-height: 150%;
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner-nav-label
+{
+	font-size: 16px;
+	line-height: 160%;
+	text-align: center;
+	color: #656565;
+	max-width: 456px;
+	margin: 56px auto 0;
+}
+@media (max-width: $min-small)
+{
+	.banner-nav
+	{
+		padding-bottom: 60px;
+	}
+	.banner-nav-bg
+	{
+		min-height: 240px;
+	}
+	.banner-nav-main
+	{
+		height: auto;
+		justify-content: flex-start;
+	}
+	.banner-nav-main__logo
+	{
+		max-width: 245px;
+		max-height: 111px;
+		position: static;
+		margin-left: -10px;
+		margin-right: 20px;
+		transform: translateY(-40px);
+	}
+	.banner-nav-main__item
+	{
+		display: block;
+		width: fit-content;
+		margin-bottom: 5px;
+		padding-bottom: 2px;
+		padding-top: 5px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+	.banner-nav-descr-wr
+	{
+		&:before
+		{
+			content: unset;
+		}
+	}
+	.banner-nav-descr
+	{
+		font-size: 20px;
+		max-width: unset;
+	}
+	.banner-nav-label
+	{
+		margin-top: 40px;
+	}
+}

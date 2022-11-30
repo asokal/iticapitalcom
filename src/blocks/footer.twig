@@ -1,0 +1,130 @@
+{% block footer %}
+	<footer class="footer" id="footer">
+		<div class="footer__social">
+			<a href="https://twitter.com/ITICapital_ltd" class="footer__social-item">
+				{% include '../../img/twitter.svg' %}
+			</a>
+
+			<a href="http://linkedin.com/company/27149106/" class="footer__social-item">
+				{% include '../../img/in.svg' %}
+			</a>
+		</div>
+
+		<div class="g-section-title">
+			contacts
+		</div>
+
+		<div class="container">
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					United Kingdom
+				</div>
+
+				<div class="footer-iti-agency__name">
+					ITI Capital Limited
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, United Kingdom
+				</div>
+
+				<a href="tel:+4402038898333" class="footer-iti-agency__link">+44 (0) 20 3889 8333</a>
+
+				<a href="#" class="footer-iti-agency__link">info@iticapital.com</a>
+			</div>
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Russia
+				</div>
+
+				<div class="footer-iti-agency__name">
+					Investment Company IT Invest JSC
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					13th Floor, 10 Presnesnskaya emb, Naberezhnaya Tower, Block A, 123112 Moscow, Russia
+				</div>
+
+				<a href="tel:+74959333230" class="footer-iti-agency__link">+7 (495) 933 32 30</a>
+
+				<a href="#" class="footer-iti-agency__link">info@iticapital.com</a>
+			</div>
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Gernsey
+				</div>
+
+				<div class="footer-iti-agency__name">
+					ITI Trade LTD
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					PO Box 286, Floor 2 Trafalgar Court, Les Banques, St Peter Port, GUERNSEY GY1 4LY
+				</div>
+
+				<a href="tel:+4401481712266" class="footer-iti-agency__link">+44 (0) 1481 712266</a>
+
+				<a href="#" class="footer-iti-agency__link">contact@iticapital.com</a>
+			</div>
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Kazakhstan
+				</div>
+
+				<div class="footer-iti-agency__name">
+					ITI Capital Qazaqstan Limited
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					Mangilik Yel 55/16 Block C3.1, Office 339, Z05T3F2, Nur-Sultan, Kazakhstan
+				</div>
+
+				{# <a href="#" class="footer-iti-agency__link">+7 XXX XXX XX XX</a> #}
+			</div>
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Cyprus
+				</div>
+
+				<div class="footer-iti-agency__name">
+					IT Invest Financial Solutions (Cyprus) Limited
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					163 Leontiou Street, Ground floor, 3022, Limassol, Cyprus
+				</div>
+
+				<a href="tel:+35725571007" class="footer-iti-agency__link">+357 25 571 007</a>
+
+				<a href="#" class="footer-iti-agency__link">Sergey.Potapov@iticapital.com</a>
+			</div>
+		</div>
+
+		<div class="footer__index-disclaimer">
+			<div class="g-typography">
+				<p>
+					ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+				</p>
+
+				<p>
+					Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+				</p>
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			© iticapital.com, 1994—2020
+		</div>
+	</footer>
+
+	<div class="_overlay overlay" onclick="o2.popups.closePopup()"></div>
+	{% include "../blocks/popup-alert-covid.twig" %}
+	{% include "../blocks/popup-alert-svs-securities.twig" %}
+	{# {% include "../blocks/popup-alert-fraud.twig" %} #}
+
+	{% include "../blocks/cookie.twig" %}
+{% endblock %}

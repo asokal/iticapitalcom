@@ -1,0 +1,18 @@
+{# news-list.twig #}
+{% extends "layouts/news-layout.twig" %}
+
+{% set title = 'Important Information' %}
+
+{% block page %}
+
+<div class="news-article news-article--disclaimer">
+	<h2 class="news-article__title news-article__title--nomargin">
+		For further information on any of our products or services, or to open an account please call us:
+	</h2>
+	<div class="g-link-group">
+		<a href="tel:+4402038898333" class="g-link g-link-group__item">+44 (0) 20 3889 8333</a>
+		<a href="mailto:customerservice@iticapital.com" class="g-link g-link-group__item">customerservice@iticapital.com</a>
+	</div>
+</div>
+
+{% endblock %}

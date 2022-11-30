@@ -1,0 +1,115 @@
+.our-mission
+{
+	margin-bottom: 74px;
+}
+
+.our-mission__header
+{
+	padding: 48px;
+	height: 307px;
+	background-image: url('../img/our-mission-bg.jpg');
+
+	.g-section-title.g-section-title--line
+	{
+		color: #fff;
+		min-width: auto;
+		text-align: left;
+
+		&:after
+		{
+			background: #fff;
+			left: 20px;
+		}
+	}
+}
+
+.our-mission__content
+{
+	padding-top: 60px;
+	background-color: #FAFAFA;
+
+	.promo-numbers
+	{
+		margin-bottom: 52px;
+	}
+
+	.promo-numbers__item
+	{
+		color: #656565;
+	}
+
+	.management-content
+	{
+		position: relative;
+		left: -57px;
+	}
+	.management
+	{
+		padding-bottom: 88px;
+		padding-top: 0;
+	}
+}
+
+.our-mission__header-text
+{
+	font-family: $secodary-font;
+	font-size: 32px;
+	line-height: 1.5;
+	color: #fff;
+	max-width: 640px;
+}
+
+
+@media (max-width: 1199px)
+{
+	.our-mission__header
+	{
+		padding: 32px;
+		height: 200px;
+	}
+
+	.our-mission__header-text
+	{
+		font-size: 22px;
+	}
+
+	.our-mission__content .management-content
+	{
+		left: 0;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.our-mission__header
+	{
+		padding: 20px;
+	}
+
+	.our-mission__header-text
+	{
+		font-size: 18px;
+	}
+
+	.our-mission__content
+	{
+		.promo-numbers
+		{
+			justify-content: center;
+			margin-bottom: 0;
+		}
+
+		.promo-numbers__item
+		{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+			margin-right: 0;
+		}
+
+		.management
+		{
+			padding: 20px;
+		}
+	}
+}

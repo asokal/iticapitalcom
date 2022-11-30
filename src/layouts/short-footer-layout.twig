@@ -1,0 +1,169 @@
+{# layout.twig #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+	<meta name="viewport" content="width=device-width">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="HandheldFriendly" content="true"/>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport min-width=375px" content="min-width=375, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+	<script  src="js/main.min.js"></script>
+	<title>Инвестиции в IPO — ITI Capital</title>
+	<!-- <meta name="description" content="ITI Capital собирает заявки клиентов на участие в IPO Saudi Aramco. Заработайте на крупнейшем IPO в мире!"> -->
+	<meta property="og:url" content="https://iticapital.ru/ipo/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Инвестиции в IPO — ITI Capital">
+	<!-- <meta property="og:image" content="img/assets/OpenGraph-Aramco.png"> -->
+	<!-- <meta property="og:description" content="ITI Capital собирает заявки клиентов на участие в IPO Saudi Aramco. Заработайте на крупнейшем IPO в мире!"> -->
+	<meta property="og:site_name" content="ITI Capital">
+	<meta property="og:locale" content="ru_RU">
+</head>
+<body>
+	{% include "../blocks/header.twig" %}
+	<div class="wrapper {% if wrapperFlex == true %}wrapper--flex{% endif %}">
+		<div class="{{wrapperName}}" {% if stickyContainer == true %} data-sticky-container {% endif %}>
+			{% block page %}{% endblock %}
+		</div>
+	</div>
+
+	{% if callback == true %}
+		<div class="container">
+			<div class="sticky-card sticky-card--mobile _stickyCard" id="sticky-card">
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">Dealing and customer service</div>
+					<a href="#" class="g-link">
+						+44 (0) 20 3889 8333
+					</a>
+				</div>
+
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">E-mail</div>
+					<a href="#" class="g-link">
+						dealing@iticapital.com
+					</a>
+				</div>
+
+				<div class="sticky-card__btn-group">
+					<a href="#" class="g-btn">
+						Open an Account
+					</a>
+
+					<a href="#" class="sticky-card__login">
+						Log In
+					</a>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{% if callbackBTCE == true %}
+		<div class="container">
+			<div class="sticky-card sticky-card--btce sticky-card--mobile">
+				<div class="sticky-card__section">
+					<div class="sticky-card__links">
+						<div class="sticky-card__contact-title">Useful Resources</div>
+						<ul>
+							<li>
+								<a href="#" class="g-link">
+									Prospectus ->
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="g-link">
+									2-pager ->
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="g-link">
+									BTCE points <br> of Difference Authorised <br> Participants ->
+								</a>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a href="#" class="g-link">
+									Primer ->
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="g-link">
+									FAQ ->
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="sticky-card__section">
+					<div class="sticky-card__contact">
+						<div class="sticky-card__contact-title">Contact phone</div>
+						<a href="tel:+4402038898333" class="g-link">
+							+44 (0) 20 3889 8333
+						</a>
+					</div>
+
+					<div class="sticky-card__contact">
+						<div class="sticky-card__contact-title">General requests and information</div>
+						<a href="#" class="g-link">
+							info@itidigital.io
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{% block footer %}
+		<footer class="footer footer--short">
+			<div class="footer__index-disclaimer">
+				<div class="g-typography">
+					<p>
+						ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+					</p>
+					{% if thirdLine == true %}
+						<p>
+							The information contained in this should not be relied upon by retail investors or any other persons to make financial decisions. ITI Capital is unable to offer services connected with BTCetc to retail investors. The material contained on this webpage is for informational purposes only and should not be construed as an offer, solicitation of an offer, or an inducement to buy or sell BTCetc, cryptocurrencies or any equivalents. Past performance of BTCetc is not a viable indication of future performance. Your capital is at risk when investing in BTCetc.
+						</p>
+					{% endif %}
+					<p>
+						Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__copyright">
+				© iticapital.com, 1994—2020
+			</div>
+		</footer>
+	{% endblock %}
+	<div class="_overlay overlay" onclick="o2.popups.closePopup()"></div>
+	{% include "../blocks/popup-alert-covid.twig" %}
+	{% include "../blocks/popup-alert-svs-securities.twig" %}
+	{# {% include "../blocks/popup-alert-fraud.twig" %} #}
+	{% include "../blocks/cookie.twig" %}
+
+	{% if btcePopup == true %}
+		{% include "../blocks/popup-btce.twig" %}
+	{% endif %}
+
+	{% if callback == true %}
+		<a href="#sticky-card" class="callback active _callback" onclick="o2.scrollTo('#sticky-card')">
+			<img src="./img/phone.svg" class="callback__icon" alt="">
+		</a>
+	{% endif %}
+</body>
+</html>

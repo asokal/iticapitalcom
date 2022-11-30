@@ -1,0 +1,48 @@
+.our-services
+{
+	h2.g-page-subtitle
+	{
+		font-size: 48px;
+		margin-bottom: 31px;
+		line-height: 1.3;
+	}
+
+	.g-typography
+	{
+		width: 600px;
+		max-width: 100%;
+		margin-bottom: 32px;
+	}
+}
+
+.our-services__descr
+{
+	font-family: $secodary-font;
+	color: #333;
+	font-size: 32px;
+	line-height: 1.5;
+	font-weight: 300;
+	margin-bottom: 40px;
+	width: 770px;
+	max-width: 100%;
+}
+
+@media (max-width: 767px)
+{
+	.our-services__descr
+	{
+		font-size: 26px;
+		line-height: 1.4;
+		margin-bottom: 32px;
+	}
+
+	.our-services
+	{
+		h2.g-page-subtitle
+		{
+			font-size: 36px;
+			margin-bottom: 32px;
+			padding: 0;
+		}
+	}
+}

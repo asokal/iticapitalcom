@@ -1,0 +1,41 @@
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'regional' %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Kazakhstan', 'bgPrefix': 'kz', 'wrapModifier': 'private-clients-banner__wrap--center'} %}
+	<div class="regional__wrapper g-typography">
+		<h2 class="g-page-subtitle">
+			ITI Capital Qazaqstan was incorporated in March 2020.
+		</h2>
+
+		<h3 class="g-title-semi">Transparent pricing and cutting edge innovation for your automated trading</h3>
+
+		<ul class="g-dash-list">
+			<li>
+				consulting on bond’s placements of Kazakhstan's issuers,
+			</li>
+
+			<li>
+				corporate funding,
+			</li>
+
+			<li>
+				support of M&A transactions,
+			</li>
+
+			<li>
+				marketing of products and services of the group's companies: ETF, DMA, brokerage services.
+			</li>
+		</ul>
+
+		<div class="regional__contacts">
+			<h3 class="g-title-semi">Contacts</h3>
+
+			<span>ITI Capital Qazaqstan Limited</span>
+
+			<span>Mangilik Yel 55/16 Block C3.1, Office 339, Z05T3F2, Nur-Sultan, Kazakhstan</span>
+
+			{# <a href="#" class="g-link">+7 XXX XXX XX XX</a> #}
+		</div>
+	</div>
+{% endblock %}

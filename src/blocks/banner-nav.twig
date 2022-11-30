@@ -1,0 +1,33 @@
+<section class="banner-nav {{class}}">
+	<div class="banner-nav-bg"></div>
+	<div class="banner-nav-main-wr">
+		<div class="container">
+			<div class="banner-nav-main">
+				<div class="banner-nav-main__logo">
+					{% if class == '_digital' %}
+					<img src="img/logo-digital.svg" alt="logo">
+					{% else %}
+					<img src="img/logo-tech.svg" alt="logo">
+					{% endif %}
+				</div>
+				<div class="banner-nav-main__items">
+					<a href="javascript:void(0)" onclick="o2.scrollTo('.banner-nav-main-wr')" class="banner-nav-main__item _active">About</a>
+					<a href="javascript:void(0)" onclick="o2.scrollTo('.management')" class="banner-nav-main__item">Management</a>
+					<a href="javascript:void(0)" onclick="o2.scrollTo('.footer')" class="banner-nav-main__item">Contacts</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="banner-nav-descr-wr">
+			<div class="banner-nav-descr">
+				{{descr}}
+			</div>
+		</div>
+		{% if label %}
+		<div class="banner-nav-label">
+			{{label}}
+		</div>
+		{% endif %}
+	</div>
+</section>

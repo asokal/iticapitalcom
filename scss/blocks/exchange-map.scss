@@ -1,0 +1,168 @@
+.exchange-map
+{
+	margin-bottom: 50px;
+	background-color: #FAFAFA;
+}
+
+.exchange-map__inner
+{
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.exchange-map__map
+{
+	width: 1196px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	img
+	{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.exchange-map__point
+{
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 3px solid #EC231A;
+	border-radius: 50%;
+	position: absolute;
+	cursor: pointer;
+	transition: .2s;
+
+	&:hover
+	{
+		background-color: #EC231A;
+
+		.g-tooltip
+		{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&--big
+	{
+		width: 32px;
+		height: 32px;
+		font-size: 14px;
+		line-height: 26px;
+		text-align: center;
+		color: #656565;
+
+		&:hover
+		{
+			color: #fff;
+		}
+
+		.g-tooltip
+		{
+			text-align: left;
+		}
+	}
+
+	&--small
+	{
+		width: 16px;
+		height: 16px;
+		background-color: #6387AB;
+		border: 3px solid #6387AB;
+
+		&:hover
+		{
+			background-color: #fff;
+		}
+	}
+}
+
+.exchange-map__market
+{
+	font-family: $accent-font;
+	line-height: 1.4;
+	white-space: nowrap;
+
+	&:not(:last-child)
+	{
+		margin-bottom: 10px;
+	}
+}
+
+.exchange-map__market-name
+{
+	font-size: 14px;
+	color: #333;
+}
+
+.exchange-map__market-note
+{
+	font-size: 12px;
+	color: #909090;
+}
+
+h1.exchange-map__title
+{
+	font-family: $secodary-font;
+	font-size: 56px;
+	line-height: 1.3;
+	color: #333333;
+	position: absolute;
+	top: 31px;
+	margin-bottom: 0;
+}
+
+
+@media (max-width: 1279px)
+{
+	.exchange-map__point
+	{
+		display: none;
+	}
+
+	.exchange-map__map
+	{
+		width: 1000px;
+	}
+
+	h1.exchange-map__title
+	{
+		top: 0;
+		left: 20px;
+	}
+}
+
+@media (max-width: 1023px)
+{
+	.exchange-map__inner
+	{
+		padding: 20px;
+		padding-top: 5px;
+	}
+
+	h1.exchange-map__title
+	{
+		position: static;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.exchange-map__map
+	{
+		img
+		{
+			width: 135%;
+			transform: translateX(-20%);
+		}
+	}
+
+	h1.exchange-map__title
+	{
+		font-size: 44px;
+		line-height: 1.15;
+	}
+}

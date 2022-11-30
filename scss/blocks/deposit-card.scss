@@ -1,0 +1,70 @@
+.deposit-card
+{
+	width: 100%;
+	max-width: 724px;
+	background-color: #FBFBFB;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 32px;
+
+	.g-title-semi, h3.g-title-semi
+	{
+		font-size: 18px;
+		margin-bottom: 24px;
+	}
+}
+
+.deposit-card__icon
+{
+	position: absolute;
+	top: 24px;
+	right: 21px;
+}
+
+.deposit-card-data
+{
+	margin-bottom: 24px;
+	font-family: $accent-font;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #656565;
+
+}
+
+.deposit-card-data__item
+{
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.deposit-card-data__key
+{
+	flex-basis: 180px;
+	max-width: 180px;
+	flex-shrink: 0;
+	padding-right: 10px;
+}
+
+@media (max-width: 767px)
+{
+	.deposit-card-data
+	{
+		.g-btn-tr
+		{
+			width: 100%;
+		}
+	}
+
+	.deposit-card-data__item
+	{
+		flex-wrap: wrap;
+	}
+
+	.deposit-card-data__key
+	{
+		max-width: 100%;
+		flex-basis: 100%;
+		color: #333;
+		font-size: 18px;
+	}
+}

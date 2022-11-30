@@ -1,0 +1,29 @@
+.g-btn
+{
+	display: block;
+	width: 222px;
+	text-align: center;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 60px;
+	background-color: #EC231A;
+	font-family: $accent-font;
+	color: #fff;
+	font-size: 16px;
+}
+
+.g-btn-tr
+{
+	display: block;
+	width: 240px;
+	padding: 0 30px;
+	max-width: 100%;
+	text-align: center;
+	height: 46px;
+	line-height: 45px;
+	border-radius: 60px;
+	border: 1px solid #EC231A;
+	background-color: #fff;
+	font-family: $semi-font;
+	color: #333;
+}

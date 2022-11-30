@@ -1,0 +1,8 @@
+<div class="g-popup _popup {{popupClass}}" onclick="event.stopPropagation();" id="{{popupId}}">
+	<div onclick="o2.popups.closePopup();" class="g-popup__close _popupClose">
+		<img src="./img/close.svg" alt="">
+	</div>
+	<div class="g-popup__body">
+		{% block popupConent %}{% endblock %}
+	</div>
+</div>
