@@ -1,0 +1,448 @@
+{# index.twig #}
+{% extends "layouts/group-layout.twig" %}
+
+{% set headerModify = 'header--group' %}
+{% set bodyModify = '_header-is-alw-fixed' %}
+
+{% block page %}
+	<section class="home" id="home">
+		<div class="home-banner home-banner--left">
+			<div class="container">
+				<h1 class="home-banner__title">
+					Leading <br> financial services provider
+				</h1>
+
+				<div class="home-banner__descr">
+					ITI Group Ltd. is focused on technology, <br> prime services, algorithmic trading
+				</div>
+
+				{% include "./blocks/home-group-nav.twig" %}
+			</div>
+		</div>
+	</section>
+
+	<section class="about about--group" id="about">
+		<div class="container">
+			<div class="g-section-title g-section-title--line g-section-title--line-purple">Who we are</div>
+
+			<div class="about__descr">
+				With the backing of Da Vinci Capital, ITI Group has built its proprietary front-to-back technology into a high-quality product that is scalable into global markets
+			</div>
+
+			<div class="about__map-text">
+				With a brokerage and custody license in London and Guernsey, ITI Group is positioned to consolidate its presence, and build market share, in key emerging markets. ITI Group launch buy-side products in partnership with ITI Funds.
+			</div>
+		</div>
+	</section>
+
+	{% include "./blocks/our-mission.twig" %}
+
+	<section class="about about--group">
+		<div class="g-section-title g-section-title--line g-section-title--line-purple">ITI Group Geography</div>
+
+		<ul class="about__group-list">
+			<li>
+				ITI Capital
+			</li>
+
+			<li>
+				ITI Funds
+			</li>
+
+			<li>
+				ITI Digital
+			</li>
+
+			<li>
+				ITI Tech
+			</li>
+		</ul>
+
+		<div class="about__map">
+			<img src="./img/it-group-map.png" alt="">
+		</div>
+	</section>
+
+	<section class="our-people" id="our-people">
+		<div class="g-section-title">
+			our people
+		</div>
+
+		<div class="our-people__items">
+			<div class="container">
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/jelezko.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Oleg Jelezko
+					</div>
+
+					<div class="our-people-item__position">
+						Chairman of the Board ITI Group
+					</div>
+
+					<div class="our-people-item__descr">
+						Oleg has 25 years of investment management, banking and management consulting experience in the United Kingdom, Russia, the Czech Republic and other emerging markets. Prior to the Da Vinci Capital Group, he was a managing director at Renaissance Capital in Moscow, a director and COO at Credit Suisse First Boston in London, a business consultant at Andersen Consulting and McKinsey in the United Kingdom, the Czech Republic and Russia. Oleg is the founding partner of the Da Vinci Capital Group and is responsible for investment strategy and all aspects of its operations.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/fulling.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Dennis Fulling
+					</div>
+
+					<div class="our-people-item__position">
+						Member of the Board ITI Group
+					</div>
+
+					<div class="our-people-item__descr">
+						Dennis joined Da Vinci Capital in 2012 as a managing partner and is responsible for investor relations, investment processes and financial management. He has over 25 years of professional experience in the financial sector, including 14 years in Russia. Since 2009, Dennis has also held the position of CFO of Norilsk Nickel International. Prior to that, he was Group Treasurer of the Renaissance Group, CFO of Renaissance Capital Group and Renaissance Capital Consumer Finance Bank, Vice President of MasterCard International and Controller/CFO of American Express Russia. Since 2007, Dennis has led a club of private investors which has realized close to USD 20m in investments, with a focus on Russian financial services, internet, and technology companies. Dennis is a Certified Public Accountant in the State of New York and holds a BS degree from Mount St. Mary’s University, Maryland.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/brummas.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Leonardo Brummas Carvalho
+					</div>
+
+					<div class="our-people-item__position">
+						CEO Wealth Management
+					</div>
+
+					<div class="our-people-item__descr">
+						Leonardo has 23 years of experience in the financial services industry. He has held executive positions with Credit Suisse for 22 years. At his previous role he was Head of Emerging Europe London from 2013 to 2019 with a focus on Russia and the CIS. In 2019 Leonardo was invited to ITI Capital as CEO Wealth Management. His is responsible for restructuring the group, further digitization and accelerating its growth.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/chuprin.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Andrey Chuprin
+					</div>
+
+					<div class="our-people-item__position">
+						CEO Institutional Business
+					</div>
+
+					<div class="our-people-item__descr">
+						Andrey has over 20 years of experience in financial sector joining us from Nomura where he was a Managing Director, Head of Russia & CIS Global Markets Sales. Prior to that he was a Managing Director, heading FICC Sales at Sberbank CIB as well as Director at Credit Suisse and Merrill Lynch. <br> <br>
+
+						At ITI Capital, Andrey oversees an important area of capital and liquidity management across all locations. He also focuses on growing our capital markets and financing capabilities for various client segments.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/dontsov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Nikolay Dontsov
+					</div>
+
+					<div class="our-people-item__position">
+						COO of ITI Group
+					</div>
+
+					<div class="our-people-item__descr">
+						Prior to that Nikolay held CEO positions of ITI Group, ITI Funds and investment advisor for Da Vinci Capital. Previous experience of Nikolay includes various top management and business development positions in Renaissance Capital and VTB Capital.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/pokrzywa.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Dorota Pokrzywa
+					</div>
+
+					<div class="our-people-item__position">
+						CFO of ITI Group
+					</div>
+
+					<div class="our-people-item__descr">
+						Dorota  has started her career  in 2006  building up to strong portfolio of financial management roles mainly in international banking and brokerage sectors. This includes globally recognised companies such as  BGC Partners, Sova Capital, BMCE Bank International plc  and Saxo Capital Markets UK.  She is qualified Chartered Management Accountant (CIMA) with educational background in Performance Management. In ITI Capital, Dorota is responsible for overall financial strategy and  forward looking support of the business growth.  Her modern leadership style is focusing on building strong teams of ambitious individuals with results driven attitude.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/emelyanov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Alexey Emelyanov
+					</div>
+
+					<div class="our-people-item__position">
+						Global CTO of ITI Capital Group
+					</div>
+
+					<div class="our-people-item__descr">
+						In ITI Group Alexey is responsible for Informational Systems & Technology across the ITI Group and is focused on digital transformation of the global IT architecture, streamlining and robotization of business processes as well as management of strategic projects portfolio for all business units. <br> <br>
+
+						Alexey has extensive experience in developing global IT strategy, implementing infrastructure reliability methods and managing a large number of projects and IT systems. <br> <br>
+
+						Prior to joining ITI Group, Alexey worked in senior positions at IT-departments of major international financial companies:  Commercial Bank «Unistream», ING BANK (EURASIA), VTB Capital, Raiffeisen Bank, Renaissance Capital, Mobile TeleSystems» (MTS), Credit Suisse First Boston (Europe).
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/kulsharipova.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Alfiya Kulsharipova
+					</div>
+
+					<div class="our-people-item__position">
+						Global Head of Legal & Compliance
+					</div>
+
+					<div class="our-people-item__descr">
+						Alfia is covering all ITI Group offices and will manage, lead and coordinate all legal and compliance teams in Moscow and London as well as outsourced in other locations. <br><br>
+
+						Before joining ITI Capital Alfia worked for Unicredit for 6 years where she held position as Managing Director/Senior Vice President, Head of Legal Central and Eastern Europe. Alfia also worked for Merrill Lynch, JP Morgan Chase Bank and Credit Suisse in London and Moscow.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/barinova.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Ekaterina Barinova
+					</div>
+
+					<div class="our-people-item__position">
+						Global Head of HR
+					</div>
+
+					<div class="our-people-item__descr">
+						Ekaterina is an experienced senior HR executive at a strategic, operational and consulting level, with a strong track record in developing and driving HR management in the following companies – Renaissance Capital, ING, Uralsib Capital, VTB Capital, Jones Lang La Salle and Colliers International, where she held top HR positions. <br><br>
+
+						As a well-known HR professional with the proven international record, Ekaterina brings more than 25 years of experience in the following HR areas – talent attraction & retention, staff training & development, compensation & benefits, organizational development and corporate cultural change. At Colliers International Ekaterina worked as a COO of the Russian business. Crisis management and restructuring are also her exceptional professional strengths.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/panov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Philipp Panov
+					</div>
+
+					<div class="our-people-item__position">
+						Global Head of Structured Notes & Head of Russia
+					</div>
+
+					<div class="our-people-item__descr">
+						Philipp has been working in the financial market since 1993. Prior to joining ITI Capital as a Managing Director, he was responsible for team-building and sales in Uralsib Capital and  Renaissance Capital, interacting with institutional, corporate, private (HNWI) clients. Since joining ITI Capital in 2018, Philipp has been developing the group’s business in Russia.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/agarwal.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Rahul Agarwal
+					</div>
+
+					<div class="our-people-item__position">
+						Head of Private Clients UK
+					</div>
+
+					<div class="our-people-item__descr">
+						Rahul has over 20 years of experience within the financial sector working at firms such as TD Ameritrade in America and then ETRADE, Saxo Capital Markets and IG in the UK. Most recently he was at Societe Generale Securities Services in the UK where he was involved in the Wealth Management offering.<br>
+						<br>
+						At ITI Capital, Rahul will be responsible for the profitability of the private client business including product, sales & marketing and dealing.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/potapov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Sergey Potapov
+					</div>
+
+					<div class="our-people-item__position">
+						Head of Cyprus Office
+					</div>
+
+					<div class="our-people-item__descr">
+						Sergei has a wide experience in working for Russian and international investment companies and commercial banks since 1996. Before joining ITI Group, Sergey was a partner at Movchan’s Group, headed an international investment company in Cyprus, held senior positions in Nomos Bank Asset Management in Moscow. Sergei is certified as a charted professional in securities and financial markets in both Russia and Cyprus. Sergei has a degree in economics by Moscow state open university.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/filatov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Alexey Filatov
+					</div>
+
+					<div class="our-people-item__position">
+						ITI Trade / Guernsey
+					</div>
+
+					<div class="our-people-item__descr">
+						From 2014 until recently Mr. Filatov was the Chairman of the Board of Directors and Head of the Guernsey office for ITI Trade Limited, part of ITI Group Ltd, the owner of ITInvest, Russia's top 10 financial broker. As Head of office, Mr. Filatov supervised all aspects of office functioning including business processes, liaison with the regulator, client work and business development. <br><br>
+						From 2006 till 2012 Alexey worked as a business development manager at Thompson Reuters and at Direct Capital Solutions, was a partner at de Vere Group, a financial consultancy, where he worked with HNWI (High-net-worth individuals), was Executive Director, Head of Equity, Fixed Income and Treasury Operations at Goldman Sachs. Mr. Filatov began his career with Renaissance Capital, Russia's leading private investment bank. He progressed from an Equity Settlement Officer to become Deputy Head of Fixed Income and Equities Operations Department. <br><br>
+						Alexey has a MA degree from the Moscow State Linguistic University. He completed Corporate Finance Programme at the London Business School and attended AML and CFT Course for Directors and Senior Management at the GTA University Centre.
+					</div>
+				</div>
+
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/schumann.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Ramzi Schumann
+					</div>
+
+					<div class="our-people-item__position">
+						Senior Advisor MENA Region
+					</div>
+
+					<div class="our-people-item__descr">
+						Ramzi has 30 years of international senior experience in investments and general management in multiple industries and sectors. Ramzi started his career setting-up and managing companies in the agribusiness sector in several countries. In 2008, he successfully transited to the private equity and investments industry and held leading roles at PE backed OCTAL Petrochemicals, and then at Oman based Takamul Investment Company and Al-Hosn Investment Company. <br><br>
+						Ramzi has substantial experience in multiple areas including cross border investments, M&A, corporate finance, turnarounds, performance improvement, general management, operations, marketing and business development and is fluent in English, French and Arabic.     Ramzi graduated from Cornell University and holds an Executive MBA from TRIUM. He is has held and is holding several Board positions in several non-profit organizations including the Oman American Business Council, the Oman French Friendship Association, the Qatar French Business Council and the HEC Alumni Advisory Board in Qatar.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/pryanichnikov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Denis Pryanichnikov
+					</div>
+
+					<div class="our-people-item__position">
+						Head of Kazakhstan Office
+					</div>
+
+					<div class="our-people-item__descr">
+						Denis has over 20 years of experience in financial sector joining us from Moscow Exchange where he was a Head of Innovation and investment market focusing on primary market services for growth companies and SMEs. Prior to that he was a Head of investment products at IFD Kapital, senior analyst at Alfa bank, Head of research and IB specialist at Otkritie. <br><br>
+						At ITI Capital, Denis is in charge for the development of international presence in Kazakhstan and Qatar with the focus on capital markets and transactions and advisory.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/moldavsky.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Gene Moldavsky
+					</div>
+
+					<div class="our-people-item__position">
+						CEO ITI Digital
+					</div>
+
+					<div class="our-people-item__descr">
+						Gene is an Accenture and PwC trained IT/strategic consultant turned TMT investment banker at Renaissance Capital, UBS and Alfa Bank.  After stepping down as Head of IB at Alfa Bank, Gene founded several start-ups in the digital health and AgTech space before catching the crypto bug in 2017, which lead to the creation of ITI Digital.  Gene graduated Magna Cum Laude from Boston University and London School of Economics (LSE) with double degrees in Finance and MIS, and recently completed the Oxford Blockchain Program.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/yakovlev.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Gleb Yakovlev
+					</div>
+
+					<div class="our-people-item__position">
+						Managing Director of ITI Funds
+					</div>
+
+					<div class="our-people-item__descr">
+						Gleb Yakovlev joined ITI Funds in 2018. He is responsible for overall leadership, company’s personnel and product policies. Gleb managed the launch of ITI Funds UCITS V ETF platform in Luxembourg, algorithmic and hedge fund platform. <br><br>
+						Gleb has 20 years of investment management, brokerage and custody experience in Russia. <br><br>
+						Before joining ITI Funds Gleb served as Managing Director at ITI Capital (former ITinvest), where he also oversaw the trading desk, financing operations, and investment banking services. <br><br>
+						He moved to ITI Capital from Renaissance Capital, where he led the development of structured and other investment products in 2009 and served as CEO in 2010-2012. In 2008 Gleb was managing director at Da Vinci Capital responsible for the development of equity funds. Previously Gleb had experience as manager of event driven hedge fund, CEO at Renaissance Broker, Head of Custody in Credit Suisse.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__name">
+						Daria Folomeeva
+					</div>
+
+					<div class="our-people-item__position">
+						ITI Tech
+					</div>
+
+					<div class="our-people-item__descr">
+						Prior to joining ITI Tech as a  co-founder and ITI Capital as a business development head, Daria has worked in PRYTEK|GFS and she launched the project on American stock market analysis in Russia together with Israeli company TipRanks Ltd. Now she is the official representative of the company. At ITI Tech and ITI Capital Daria is responsible for launching of the new projects together with ITI’s partners and for the development of internal fintech platforms and solutions of ITI group. <br> <br>
+						Daria has started her career as the head of the joint project between Dow Jones Int. Ltd. and PRIME business news agency. After that Daria has worked with the projects in the financial sector, fintech startups and investment companies.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="news">{% include "./blocks/news.twig" %}</div>
+
+	<section class="partners">
+		<div class="container">
+			<div class="g-section-title partners__title">
+				Selected vendors & partners
+			</div>
+
+			<div class="partners__list">
+				<div class="partners__list-item">
+					<img src="./img/rjo.svg" alt="">
+				</div>
+
+				<div class="partners__list-item">
+					<img src="./img/nomura.svg" alt="">
+				</div>
+
+				<div class="partners__list-item">
+					<img src="./img/gpp.svg" alt="">
+				</div>
+
+				<div class="partners__list-item">
+					<img src="./img/societe.svg" alt="">
+				</div>
+				<div class="partners__list-item">
+					<img src="./img/interactive-brokers.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{# news-list.twig #}
+{% extends "layouts/news-layout.twig" %}
+
+{% set title = 'News' %}
+
+{% block page %}
+	{% include "./blocks/news.twig" with {'newsPage': 'true', 'modifier': 'news--short', 'titleModifier': 'news__item-title--bold'} %}
+
+	<div class="news-pagination">
+		<div class="news-pagination__inner">
+			<a href="#" class="news-pagination__arrow">
+				<img src="img/arrow-left.svg" alt="logo">
+			</a>
+			<div class="news-pagination__value">
+				<span>11–20</span> / <span>78</span>
+			</div>
+			<a href="#" class="news-pagination__arrow">
+				<img src="img/arrow-right.svg" alt="logo">
+			</a>
+		</div>
+	</div>
+{% endblock %}

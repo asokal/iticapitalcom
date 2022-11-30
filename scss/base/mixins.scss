@@ -1,0 +1,40 @@
+@mixin mobile-container() {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin section-bg-lazy($background, $toMobile) {
+
+    @media (min-width: $min-large)
+    {
+        background-image: url('../img/#{$background}-bg-lg.jpg');
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            background-image: url('../img/#{$background}-bg-lg-2x.jpg');
+        }
+    }
+    @media (min-width: $min-medium)
+    {
+        background-image: url('../img/#{$background}-bg-md.jpg');
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            background-image: url('../img/#{$background}-bg-md-2x.jpg');
+        }
+    }
+
+
+    @if($toMobile) {
+        @media (min-width: 500px)
+        {
+            background-image: url('../img/#{$background}-bg-sm.jpg');
+            @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+                background-image: url('../img/#{$background}-bg-sm-2x.jpg');
+            }
+        }
+        @media (min-width: 200px)
+        {
+            background-image: url('../img/#{$background}-bg-mb.jpg');
+            @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+                background-image: url('../img/#{$background}-bg-mb-2x.jpg');
+            }
+        }
+    }
+}

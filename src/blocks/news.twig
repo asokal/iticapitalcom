@@ -1,0 +1,57 @@
+<section class="news {{ modifier }}" id="news">
+	{% if newsPage != 'true' %}
+		<h2 class="g-section-title">
+			News
+		</h2>
+	{% endif %}
+
+	<div class="container">
+		{% if modifier != 'news--short' %}
+			<a href="#" class="news__cover">
+				<div class="news__cover-img">
+					<img src="./img/news-placeholder.jpg" alt="">
+				</div>
+
+				<div class="news__cover-title">
+					ITI Capital: Why USDRUB won’t strengthen to 75?
+				</div>
+
+				<ul class="news__cover-info">
+					<li>12 March</li>
+					<li>Company News</li>
+				</ul>
+
+				{# <a href="#" class="news__cover-button">
+					+Press Coverage
+				</a> #}
+			</a>
+		{% endif %}
+
+		<div class="news__feed">
+			{% for i in 0..8 %}
+				<a href="#" class="news__item">
+					<div class="news__item-title {{ titleModifier }}">
+						Fed’s cut: shot in the air, how soon UST yields to fall below 0%?
+					</div>
+
+					<ul class="news__item-info">
+						<li>6 March</li>
+						<li>Research and Analysis</li>
+					</ul>
+
+					{% if newsPage == 'true' %}
+						<div class="news__item-descr">
+							On April 8, TMK (TRMK RX) stocks rose by more than 20%, as the company decided to delist its global depositary receipts (GDRs) from the London Stock...
+						</div>
+					{% endif %}
+				</a>
+			{% endfor %}
+
+			{% if newsPage != 'true' %}
+				<a href="#" class="news__link">
+					Read All News ->
+				</a>
+			{% endif %}
+		</div>
+	</div>
+</section>

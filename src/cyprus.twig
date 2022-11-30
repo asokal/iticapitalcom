@@ -1,0 +1,28 @@
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'regional' %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Cyprus', 'bgPrefix': 'cp', 'wrapModifier': 'private-clients-banner__wrap--center', 'titleModifier': 'private-clients-banner__title--white'} %}
+	<div class="regional__wrapper g-typography">
+		<h2 class="g-page-subtitle">
+			ITI Group is represented in Cyprus by the company IT Invest Financial Solutions (Cyprus) having offices in Nicosia and Limassol.
+		</h2>
+
+		<p>
+			The company itself does not provide any public services and is mostly engaged in intra-group business activities and projects. However, the local representatives in Cyprus will be happy to assist anyone interested in getting in touch and setting up with global business offices of ITI Group such as in London, Moscow, Guernsey and other regions of ITI Group’s presence.
+		</p>
+
+		<div class="regional__contacts">
+			<h3 class="g-title-semi">Contacts</h3>
+
+			<span>IT Invest Financial Solutions (Cyprus) Limited</span>
+
+			<span>
+				163 Leontiou Street, Ground floor, 3022, Limassol, Cyprus
+			</span>
+
+			<a href="#" class="g-link">+357 25-571-007</a>
+			<a href="mailto:Sergey.Potapov@iticapital.com" class="g-link">Sergey.Potapov@iticapital.com</a>
+		</div>
+	</div>
+{% endblock %}

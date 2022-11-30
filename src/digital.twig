@@ -1,0 +1,189 @@
+{# index.twig #}
+{% extends "layouts/layout.twig" %}
+
+{% set headerModify = 'header--tech-digital' %}
+{% set bodyModify = '_header-is-alw-fixed' %}
+
+{% block page %}
+	{% block bannernav %}
+		<section class="banner-nav _digital">
+			<div class="banner-nav-bg"></div>
+			<div class="banner-nav-main-wr">
+				<div class="container">
+					<div class="banner-nav-main">
+						<div class="banner-nav-main__logo">
+							<img src="img/logo-digital.svg" alt="logo">
+						</div>
+						<div class="banner-nav-main__items">
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.banner-nav-main-wr')" class="banner-nav-main__item _active">About</a>
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.leadership')" class="banner-nav-main__item">Leadership</a>
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.experience')" class="banner-nav-main__item">Experience</a>
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.products')" class="banner-nav-main__item">Products</a>
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.track-records')" class="banner-nav-main__item">Business Lines</a>
+							<a href="javascript:void(0)" onclick="o2.scrollTo('.footer')" class="banner-nav-main__item">Contacts</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="banner-nav-descr-wr">
+					<div class="banner-nav-descr">
+						ITI Group has recently entered into a&nbsp;JV with financial industry professionals creating ITI Digital, an&nbsp;investment banking platform bridging traditional capital markets with digital assets, an&nbsp;exciting and emerging asset class.
+					</div>
+				</div>
+			</div>
+		</section>
+	{% endblock %}
+	{% include "./blocks/digital-about.twig" %}
+	{% include "./blocks/leadership.twig" with {'items':[{'title': 'Gene Moldavsky', 'subtitle': 'CEO&nbsp;/ Head of&nbsp;Advisory', 'descr': 'Gene is&nbsp;an&nbsp;Accenture and PwC trained IT/strategic consultant turned TMT investment banker at&nbsp;Renaissance Capital, UBS and Alfa Bank. After stepping down as&nbsp;Head of&nbsp;IB at&nbsp;Alfa Bank, Gene founded several start-ups in&nbsp;the digital health and AgTech space before catching the crypto bug in&nbsp;2017, which lead to&nbsp;the creation of&nbsp;ITI Digital. Gene graduated Magna Cum Laude from Boston University and London School of&nbsp;Economics (LSE) with double degrees in&nbsp;Finance and MIS, and recently completed the Oxford Blockchain Program', 'img': 'moldavsky.jpg'},
+		{'title': 'Konstantin Antropov', 'subtitle': 'Head of&nbsp;Asset Management', 'descr': 'Konstantin started his career in&nbsp;Asset Management in&nbsp;SEB, followed by&nbsp;a&nbsp;Private Equity career focused on&nbsp;Renewable Energy and Agriculture. Konstantin dived into crypto in&nbsp;2016 and in&nbsp;2017 co-founding Element Group&nbsp;&mdash; one of&nbsp;the few Investment Banks in&nbsp;the USA focused on&nbsp;Digital Asset space based out of&nbsp;LA. After moving to&nbsp;Europe in&nbsp;2019 co-found ITI Digital. Konstantin graduated from the Stockholm School of&nbsp;Economics.', 'img': 'antropov.jpg'},
+		{'title': 'Stephen Kelso', 'subtitle': 'Head of&nbsp;Prime Brokerage&nbsp;/ Trading', 'descr': 'Stephen previously ran Galaxy Digital, Europe before joining ITI Capital as&nbsp;Head of&nbsp;Markets. Throughout the Global Financial Crisis, Stephen ran the Central Risk Unit and financing businesses at&nbsp;Renaissance Capital. Previously he&nbsp;ran the volatility arbitrage fund for KBC. He&nbsp;started his career at&nbsp;Goldman Sachs and Lehman Brothers, where he&nbsp;ran index options trading. Stephen holds a&nbsp;Masters in&nbsp;Engineering from St&nbsp;Catharine&rsquo;s College, Cambridge University.', 'img': 'kelso.jpg'}]} %}
+	<section class="advisors">
+		<div class="g-section-title g-section-title--line">
+			Selected Advisors
+		</div>
+		<div class="container advisors__content">
+			<div class="advisors-item">
+				<div class="advisors-item__img">
+					<img src="./img/hyman.jpg" alt="">
+				</div>
+				<div class="advisors-item__text">
+					<div class="advisors-item__title">John Hyman</div>
+					<div class="advisors-item__subtitle">Non-Executive Chairman</div>
+					<div class="advisors-item__descr">
+						<p>30 years of investment banking experience and assetmanagement</p>
+						<p>ex Global co-Head Capital Markets and Head of European Equity Capital Markets at Morgan Stanley</p>
+						<p>ex Chairman of the Board and CEO at Renaissance Capital</p>
+						<p>ex Head of Equities at Cheyne Capital</p>
+						<p>Lead the $1.7bn ICO of Telegram</p>
+					</div>
+				</div>
+			</div>
+			<div class="advisors-item">
+				<div class="advisors-item__img">
+					<img src="./img/jelezko.jpg" alt="">
+				</div>
+				<div class="advisors-item__text">
+					<div class="advisors-item__title">Oleg Jelezko</div>
+					<div class="advisors-item__subtitle">CEO of ITI Group</div>
+					<div class="advisors-item__descr">
+						<p>Founding partner of the Da Vinci Capital Group </p>
+						<p>ex MD Renaissance Capital in Moscow</p>
+						<p>ex Director and COO at CSFB London</p>
+						<p>ex consultant at Andersen Consulting and McKinsey</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="experience">
+		<div class="g-section-title g-section-title--line">
+			experience
+		</div>
+		<div class="container experience__content">
+			<div class="experience__descr">
+				Our team members have been at&nbsp;the forefront of&nbsp;digital assets capital raises and lead marquee transactions innovating across token financing markets:
+			</div>
+			<div class="experience__items">
+				<div class="experience-item">
+					<div class="experience-item__top">1st</div>
+					<div class="experience-item__descr">legally-issued security token</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-item__top">1st</div>
+					<div class="experience-item__descr">tokenized <br>venture fund</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-item__top">1st</div>
+					<div class="experience-item__descr">$1.5bn+ accredited investor only capital raise</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-item__top">1st</div>
+					<div class="experience-item__descr">token <br>secondary</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-item__top">1st</div>
+					<div class="experience-item__descr">token chain <br>switch</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "./blocks/track-records.twig" %}
+	{% include "./blocks/products.twig" %}
+	<section class="competencies">
+		<div class="g-section-title">
+			core <br>competencies
+		</div>
+		<div class="competencies__content">
+			<div class="container">
+				<div class="competencies-item">
+					<div class="competencies-item__title">Advisory & Capital Markets</div>
+					<div class="competencies-item__descr">We&nbsp;raise capital and provide transactional support for companies who are leading the development of&nbsp;the digital assets ecosystem. We&nbsp;leverage our unparalleled Advisory experience and network in&nbsp;Capital Markets in&nbsp;equity or&nbsp;debt capital raises, private placements and M&amp;A work</div>
+				</div>
+				<div class="competencies-item">
+					<div class="competencies-item__title">Trading and Prime Brokerage</div>
+					<div class="competencies-item__descr">We&nbsp;offer institutional investors prime brokerage services for the digital asset markets. We&nbsp;combine efficient onboarding, highly competitive pricing and same-day settlement with portfolio margining and best-in-class custody solutions to&nbsp;provide our clients institutional-grade solutions</div>
+				</div>
+				<div class="competencies-item">
+					<div class="competencies-item__title">Asset <br>Management</div>
+					<div class="competencies-item__descr">We&nbsp;curate, create and issue a&nbsp;unique range of&nbsp;institutional investment products that can satisfy both sophisticated and new investors in&nbsp;digital asset space</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block footer %}
+	<footer class="footer digital-footer" id="footer">
+		<div class="g-section-title g-section-title--line">
+			contacts us
+		</div>
+
+		<div class="container">
+			<!-- <div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					United Kingdom
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, United Kingdom
+				</div>
+
+				<a href="tel:+442075628000" class="footer-iti-agency__link">+44 207 562 8088</a>
+			</div> -->
+			<div class="digital-contacts">
+				<div class="digital-contacts__items">
+					<div class="digital-contacts-item">
+						<div class="digital-contacts-item__title">United Kingdom</div>
+						<div class="digital-contacts-item__subtitle">ITI Digital Limited</div>
+						<div class="digital-contacts-item__descr">Level&nbsp;33 Tower&nbsp;42, 25&nbsp;Old Broad Street, London EC2N 1HQ, United Kingdom</div>
+						<a href="tel:4402038898333" class="digital-contacts-item__link">+44 (0) 20 3889 8333</a>
+					</div>
+					<div class="digital-contacts-item">
+						<div class="digital-contacts-item__title">Russia</div>
+						<div class="digital-contacts-item__subtitle">ITI Digital Limited</div>
+						<div class="digital-contacts-item__descr">13th Floor, 10&nbsp;Presnesnskaya emb, Naberezhnaya Tower, Block A, 123112&nbsp;Moscow, Russia</div>
+						<a href="tel:74959333230" class="digital-contacts-item__link">+7 (495) 933 32 30</a>
+					</div>
+				</div>
+				<div class="digital-contacts-mail">
+					<div class="digital-contacts-mail-item">
+						<div class="digital-contacts-mail-item__label">General requests and information:</div>
+						<a href="mailto:info@itidigital.io" class="digital-contacts-mail-item__value">info@itidigital.io</a>
+					</div>
+					<div class="digital-contacts-mail-item">
+						<div class="digital-contacts-mail-item__label">If you would like to apply for a job:</div>
+						<a href="mailto:talent@itidigital.io" class="digital-contacts-mail-item__value">talent@itidigital.io</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			© iticapital.com, 1994—2020
+		</div>
+	</footer>
+
+	<div class="_overlay overlay"></div>
+
+	{% include "./blocks/cookie.twig" %}
+{% endblock %}

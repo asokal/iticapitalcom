@@ -1,0 +1,124 @@
+{# index.twig #}
+{% extends "layouts/layout.twig" %}
+
+{% set headerModify = 'header--tech-digital' %}
+{% set bodyModify = '_header-is-alw-fixed' %}
+
+{% block page %}
+	{% include "./blocks/banner-nav.twig" with {'descr': 'ITI Tech Digital Financial Platform&nbsp;&mdash; is&nbsp;the full cycle Fintech ecosystem with an&nbsp;access to&nbsp;a&nbsp;global capital markets, which increases financial goals of&nbsp;private and corporate clients', 'label': 'ITI TECH offers WhiteLabel solutions based on&nbsp;digital platform with an&nbsp;access to&nbsp;wide range of&nbsp;asset classes, value-adding digital tools and services'} %}
+	{% include "./blocks/tech-services.twig" %}
+	{% include "./blocks/tech-labels.twig" %}
+	{# {% include "./blocks/management.twig" with {'name': 'Philipp Panov', 'rank': 'CEO ITI Tech', 'img': 'tech-management.jpg', 'descr': 'Philipp has been working in&nbsp;the financial market since 1993. Prior to&nbsp;joining ITI Capital as&nbsp;a&nbsp;Managing Director, he&nbsp;was responsible for team-building and sales in&nbsp;Uralsib Capital and Renaissance Capital, interacting with institutional, corporate, private (HNWI) clients. Since joining ITI Capital in&nbsp;2018, Philipp has been developing the group&rsquo;s business in&nbsp;Russia.'} %} #}
+
+	<section class="our-people our-people--management" id="our-people">
+		<div class="g-section-title g-section-title--line">
+			management
+		</div>
+
+		<div class="our-people__items">
+			<div class="container">
+				<div class="our-people-item">
+					<div class="our-people-item__img">
+						<img src="./img/panov.jpg" alt="">
+					</div>
+
+					<div class="our-people-item__name">
+						Philipp Panov
+					</div>
+
+					<div class="our-people-item__position">
+						Global Head of Structured Notes & Head of Russia
+					</div>
+
+					<div class="our-people-item__descr">
+						Philipp has been working in the financial market since 1993. Prior to joining ITI Capital as a Managing Director, he was responsible for team-building and sales in Uralsib Capital and  Renaissance Capital, interacting with institutional, corporate, private (HNWI) clients. Since joining ITI Capital in 2018, Philipp has been developing the group’s business in Russia.
+					</div>
+				</div>
+
+				<div class="our-people-item">
+					<div class="our-people-item__name">
+						Daria Folomeeva
+					</div>
+
+					<div class="our-people-item__position">
+						ITI Tech
+					</div>
+
+					<div class="our-people-item__descr">
+						Prior to joining ITI Tech as a  co-founder and ITI Capital as a business development head, Daria has worked in PRYTEK|GFS and she launched the project on American stock market analysis in Russia together with Israeli company TipRanks Ltd. Now she is the official representative of the company. At ITI Tech and ITI Capital Daria is responsible for launching of the new projects together with ITI’s partners and for the development of internal fintech platforms and solutions of ITI group. <br> <br>
+						Daria has started her career as the head of the joint project between Dow Jones Int. Ltd. and PRIME business news agency. After that Daria has worked with the projects in the financial sector, fintech startups and investment companies.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block footer %}
+	<footer class="footer" id="footer">
+		<div class="g-section-title">
+			contacts
+		</div>
+
+		<div class="container">
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					United Kingdom
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, United Kingdom
+				</div>
+
+				<a href="tel:+442075628000" class="footer-iti-agency__link">+44 20 7562 8000</a>
+			</div>
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Russia
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					13th Floor, 10 Presnesnskaya emb, Naberezhnaya Tower, Block A, 123112 Moscow, Russia
+				</div>
+
+				<a href="tel:+74959333230" class="footer-iti-agency__link">+7 495 933 32 30</a>
+			</div>
+
+
+			<div class="footer-iti-agency">
+				<div class="footer-iti-agency__country">
+					Cyprus
+				</div>
+
+				<div class="footer-iti-agency__adress">
+					163 Leontiou Street, Ground floor, 3022, Limassol, Cyprus
+				</div>
+
+				<a href="tel:+442075628000" class="footer-iti-agency__link">+44 20 7562 8000</a>
+
+				<a href="#" class="footer-iti-agency__link">Sergey.Potapov@iticapital.com</a>
+			</div>
+		</div>
+
+		<div class="footer__index-disclaimer">
+			<div class="g-typography">
+				<p>
+					ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+				</p>
+
+				<p>
+					Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+				</p>
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			© iticapital.com, 1994—2020
+		</div>
+	</footer>
+
+	<div class="_overlay overlay"></div>
+
+	{% include "./blocks/cookie.twig" %}
+{% endblock %}

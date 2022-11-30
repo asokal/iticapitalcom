@@ -1,0 +1,437 @@
+{# news-list.twig #}
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'private' %}
+{% set callback = true %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Deposit & <br> Withdrawal', 'bgPrefix': 'deposit', 'titleModifier': 'private-clients-banner__title--white'} %}
+	<div class="container">
+		<div class="private__left">
+			<h2 class="g-page-subtitle">
+				Bank transfer deposits take approximately 1-2 business days for domestic transfer and 3-5 business days for international transfer to arrive and process into your trading account.
+			</h2>
+
+			<div class="g-title-devider">
+				DEPOSIT OF FUNDS
+			</div>
+
+			<div class="g-typography g-typography--career" style="margin-bottom: 32px;">
+				<p>
+					Bank transfer deposits may be made in GBP, EUR or USD. To deposit funds by bank transfer, print the ITI Capital bank account details below that correspond to the currency of your bank account and take them to your bank for processing.
+				</p>
+			</div>
+
+			<div class="deposit-card">
+				<div class="deposit-card__icon">
+					<img src="./img/gbp.svg" alt="">
+				</div>
+
+				<div class="g-title-semi">GBP Deposits</div>
+
+				<div class="deposit-card-data">
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Bank
+						</div>
+						<div class="deposit-card-data__value">
+							Lloyds TSB Bank PLC  <br> 39 Threadneedle Street, London EC2R 8AU
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Sort Code
+						</div>
+						<div class="deposit-card-data__value">
+							30-00-09
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							SWIFT Code
+						</div>
+						<div class="deposit-card-data__value">
+							LOYD GB 2L
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							IBAN
+						</div>
+						<div class="deposit-card-data__value">
+							GB77 LOYD 3000 0900 4007 47
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary
+						</div>
+						<div class="deposit-card-data__value">
+							ITI Capital Limited
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Address
+						</div>
+						<div class="deposit-card-data__value">
+							Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Account
+						</div>
+						<div class="deposit-card-data__value">
+							00400747
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							REF
+						</div>
+						<div class="deposit-card-data__value">
+							Please quote Client’s Name and ITI Capital Account Code
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="g-btn-tr">Download for Print</a>
+			</div>
+
+			<div class="deposit-card">
+				<div class="deposit-card__icon">
+					<img src="./img/euro.svg" alt="">
+				</div>
+
+				<div class="g-title-semi">EUR Deposits</div>
+
+				<div class="deposit-card-data">
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Bank
+						</div>
+						<div class="deposit-card-data__value">
+							Lloyds TSB Bank PLC  <br> 39 Threadneedle Street, London EC2R 8AU
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							SWIFT Code
+						</div>
+						<div class="deposit-card-data__value">
+							LOYD GB 2L
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							IBAN
+						</div>
+						<div class="deposit-card-data__value">
+							GB64 LOYD 3096 3486 4280 14
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary
+						</div>
+						<div class="deposit-card-data__value">
+							ITI Capital Limited
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Address
+						</div>
+						<div class="deposit-card-data__value">
+							Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Account
+						</div>
+						<div class="deposit-card-data__value">
+							86428014
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							REF
+						</div>
+						<div class="deposit-card-data__value">
+							Please quote Client’s Name and ITI Capital Account Code
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="g-btn-tr">Download for Print</a>
+			</div>
+
+			<div class="deposit-card">
+				<div class="deposit-card__icon">
+					<img src="./img/usd.svg" alt="">
+				</div>
+
+				<div class="g-title-semi">USD Deposits</div>
+
+				<div class="deposit-card-data">
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Bank
+						</div>
+						<div class="deposit-card-data__value">
+							Lloyds TSB Bank PLC  <br> 39 Threadneedle Street, London EC2R 8AU
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							SWIFT Code
+						</div>
+						<div class="deposit-card-data__value">
+							LOYD GB 2L
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							IBAN
+						</div>
+						<div class="deposit-card-data__value">
+							GB97 LOYD 3096 3411 6992 02
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary
+						</div>
+						<div class="deposit-card-data__value">
+							ITI Capital Limited
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Address
+						</div>
+						<div class="deposit-card-data__value">
+							Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Beneficiary Account
+						</div>
+						<div class="deposit-card-data__value">
+							11699202
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							SWIFT Code
+						</div>
+						<div class="deposit-card-data__value">
+							LOYD GB 2L
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							Correspondent Bank
+						</div>
+						<div class="deposit-card-data__value">
+							Bank of New York Mellon, New York, NY, USA
+						</div>
+					</div>
+
+					<div class="deposit-card-data__item">
+						<div class="deposit-card-data__key">
+							REF
+						</div>
+						<div class="deposit-card-data__value">
+							Please quote Client’s Name and ITI Capital Account Code
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="g-btn-tr">Download for Print</a>
+			</div>
+
+			<div class="g-typography g-typography--career" style="margin-bottom: 56px;">
+				<p>
+					<b>Note:</b><br>
+					ITI Capital Limited cannot guarantee exchange rates for deposits not made in the currency denomination of the account.
+				</p>
+			</div>
+
+			<div class="g-title-devider">
+				WITHDRAWAL OF FUNDS
+			</div>
+
+			<div class="g-typography g-typography--career" style="margin-bottom: 32px;">
+				<p>
+					Please complete the withdrawal form and submit the information via e-mail to <a href="mailto:customerservice@iticapital.com" class="g-link">customerservice@iticapital.com</a>
+				</p>
+			</div>
+
+			<a href="#" class="g-btn-tr" style="width: 305px;">
+				Download the Withdrawal Form
+			</a>
+		</div>
+		<div class="private__right">
+			<div class="sticky-card">
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">Dealing and customer service</div>
+					<a href="#" class="g-link">
+						+44 (0) 20 3889 8333
+					</a>
+				</div>
+
+				<div class="sticky-card__contact">
+					<div class="sticky-card__contact-title">E-mail</div>
+					<a href="#" class="g-link">
+						dealing@iticapital.com
+					</a>
+				</div>
+
+				<div class="sticky-card__btn-group">
+					<a href="#" class="g-btn">
+						Open an Account
+					</a>
+
+					<a href="#" class="sticky-card__login">
+						Log In
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	<footer class="footer footer--short footer--disclaimer">
+		<div class="footer-disclaimer">
+			<div class="footer-disclaimer__left">
+				<div class="g-section-title">
+					Disclaimer
+				</div>
+
+				<div class="g-typography">
+					<p>
+						All trading involves risk. This is especially true for trading with complex products, such as Derivatives and CFDs. It’s up to you to make sure you understand the instruments themselves, how they work and the risks you take. You could lose significantly more than you invest. Always consider your financial situation and level of experience before trading any ITI Capital Ltd product.
+					</p>
+
+					<p>
+						We strive for 100% accuracy but just like everyone else we’re human, so ITI Capital Ltd assumes no liability for errors, inaccuracies or omissions, and can’t guarantee accuracy in any of our online or offline materials.
+					</p>
+
+					<p>
+						This website contains only generalised information, it is not advice and is not directed specifically to you or your client’s goals, requirements or financial circumstances.
+					</p>
+
+					<p>
+						Please read our <a href="https://iticapital.com/terms-and-conditions.html">Terms and Conditions</a> before you start trading.
+					</p>
+
+					<p>
+						ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+					</p>
+
+					<p>
+						Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="footer-disclaimer__right">
+				<div class="g-section-title">
+					Terms & Conditions
+				</div>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/10/Terms-of-Business-Retail-Client-October-2018.pdf" class="g-link">Terms & Conditions for Private Clients</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/11/Terms-of-Business-Professonal-Nov-2018.pdf" class="g-link">Terms & Conditions Professional</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_CFD-Dec-2018.pdf" class="g-link">Key information Document (CFD)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Call-options-Dec-2018.pdf" class="g-link">Key Information Doucment (Call Options)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Put-options-Dec-2018.pdf" class="g-link">Key information Document (Put Options)</a>
+					</li>
+				</ul>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Index-Futures-Dec-2018.pdf" class="g-link">Key Information Document (Futures)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Best-Execution-Policy.pdf" class="g-link">Best Execution Policy</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Conflicts-of-Interest.pdf" class="g-link">Conflict of interest</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/rts-28-disclosures/" class="g-link">RTS 28 disclosures</a>
+					</li>
+				</ul>
+
+				<div class="g-section-title">
+					Other LEGAL NOTICES
+				</div>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/cookies%20policy.pdf" class="g-link">Cookies</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/Rate-Card-Sept-2019.pdf" class="g-link">Rate Card</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Privacy-policy_1.pdf" class="g-link">Privacy Poliсу</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/Modern%20Slavery%20Policy%20Statement.pdf" class="g-link">Modern Slavery Act</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__copyright footer__copyright--left">
+				© iticapital.com, 1994—2020
+			</div>
+		</div>
+	</footer>
+{% endblock %}

@@ -1,0 +1,57 @@
+<section class="track-records">
+	<div class="container">
+		<div class="g-section-title g-section-title--line">Selected transactions</div>
+		<div class="track-records__title">Track records</div>
+		{% set cards = [
+			{
+				'logo':  'track-enigma.svg',
+				'value': '45',
+				'label': 'Exclusive Advisor'
+			},
+			{
+				'logo':  'track-rcn.svg',
+				'value': '37',
+				'label': 'Joint Advisor'
+			},
+			{
+				'logo':  'track-block.svg',
+				'value': '22',
+				'label': 'Exclusive Advisor'
+			},
+			{
+				'logo':  'track-wax.svg',
+				'value': '82',
+				'label': 'Exclusive Advisor'
+			},
+			{
+				'logo':  'track-blockchain-capital.svg',
+				'value': '10',
+				'label': 'Exclusive Advisor'
+			},
+			{
+				'logo':  'track-storj-io.svg',
+				'value': '33',
+				'label': 'Join Advisor'
+			},
+			{
+				'logo':  'track-civic.svg',
+				'value': '30',
+				'label': 'Join Advisor'
+			},
+			{
+				'logo':  'track-circle.svg',
+				'value': '1,7',
+				'label': 'CIO / Advisors'
+			},
+		] %}
+		<div class="track-records-cards">
+			{% for card in cards %}
+			<div class="track-records-card">
+				<div class="track-records-card__logo">
+					<img src="./img/{{card.logo}}">
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

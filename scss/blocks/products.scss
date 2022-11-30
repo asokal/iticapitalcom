@@ -1,0 +1,189 @@
+.products
+{
+	padding-bottom: 96px;
+}
+.products__content
+{
+	display: flex;
+	justify-content: space-between;
+}
+.products__part
+{
+	flex-basis: 50%;
+}
+.products__part-sticky
+{
+	position: sticky;
+	top: 90px;
+}
+.products__img
+{
+	font-size: 0;
+	line-height: 0;
+	max-width: 511px;
+	max-height: 511px;
+	margin-bottom: 38px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.products__text
+{
+	padding-left: 56px;
+}
+.products-block
+{
+	margin-bottom: 32px;
+	&:last-child
+	{
+		margin-bottom: 0;
+	}
+}
+.products-block__title
+{
+	font-size: 20px;
+	line-height: 160%;
+	font-family: $semi-font;
+	margin-bottom: 27px;
+}
+.products-descr
+{
+}
+.products-descr__title
+{
+	font-family: $secodary-font;
+	font-size: 32px;
+	line-height: 150%;
+	margin-bottom: 24px;
+}
+.products-descr__text
+{
+	font-size: 16px;
+	line-height: 160%;
+	color: #656565;
+}
+.products-adv
+{
+}
+.products-adv__title
+{
+}
+.products-adv-item
+{
+	margin-bottom: 27px;
+	&:last-child
+	{
+		margin-bottom: 0;
+	}
+	&:before
+	{
+		content: '';
+		display: block;
+		margin-bottom: 24px;
+		width: 40px;
+		height: 1px;
+		background-color: #6387AB;
+	}
+}
+.products-adv-item__title
+{
+	font-size: 20px;
+	line-height: 160%;
+	margin-bottom: 12px;
+}
+.products-adv-item__descr
+{
+	font-size: 16px;
+	line-height: 160%;
+	color: #656565;
+}
+.products-facts
+{
+}
+.products-facts__title
+{
+}
+.products-facts-list
+{
+}
+.products-facts-list-item
+{
+	color: #656565;
+	font-size: 14px;
+	line-height: 160%;
+	display: flex;
+	border-top: 1px solid #EBEBEB;
+	padding: 10px 0;
+}
+.products-facts-list-item__part
+{
+	flex-basis: 50%;
+}
+.products-res
+{
+}
+.products-res__title
+{
+	color: #656565;
+	letter-spacing: 0.24em;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 160%;
+	padding-bottom: 16px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	margin-bottom: 10px;
+}
+.products-res__content
+{
+	display: flex;
+}
+.products-res__content-part
+{
+	flex-basis: 50%;
+}
+.products-res__link
+{
+	display: block;
+	color: #56318B;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 160%;
+	&:last-child
+	{
+		margin-bottom: 0;
+	}
+}
+@media (max-width: $min-medium)
+{
+
+}
+@media (max-width: $mobile)
+{
+	.products__part:first-child
+	{
+		margin-bottom: 30px;
+	}
+	.products-res
+	{
+		margin-bottom: 30px;
+	}
+	.products__content
+	{
+		flex-direction: column;
+	}
+	.products__img
+	{
+		margin: 0 auto;
+		img
+		{
+			max-width: 100%;
+		}
+	}
+	.products__text
+	{
+		padding-left: 0;
+	}
+}

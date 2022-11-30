@@ -1,0 +1,21 @@
+{% extends "../layouts/default-popup.twig" %}
+
+{% set popupId = 'popup-btce' %}
+{% set popupClass = 'popup-alert' %}
+
+{% block popupConent %}
+<h2 class="g-page-subtitle">
+	Classification of Investor and Investor type
+</h2>
+<div class="popup-alert__message">
+	<div class="g-typography">
+		<p>Under FCA Rules, you will be classified either as a retail investor, a professional investor or an eligible counterparty. If you are not classified as either a professional investor or an eligible counterparty, you will be classified as a retail investor. </p>
+		<p>ITI Capital Ltd will not sell, market or distribute cryptoasset derivatives or cryptoasset exchange traded notes (ETNs) to retail investors. </p>
+		<p>If you are not a per se professional investor (as defined in COBS 3.5.2 of the FCA Handbook) or a per se eligible counterparty (as defined in COBS 3.6.2 of the FCA Handbook), you should not access this section of our website. If you think you are capable of being categorised as an elective professional investor (as defined in COBS 3.5.3 of the FCA Handbook) or an elective eligible counterparty (as defined in COBS 3.6.2 of the FCA Handbook), you should get in touch directly with your ITI Capital contact to seek access to this section of our website.</p>
+	</div>
+</div>
+<div class="popup-alert__btce-btns">
+	<a href="#" class="g-btn">I classify as professional investor</a>
+	<div class="g-btn-tr" onclick="o2.popups.closePopup();">close</div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+.promo-numbers
+{
+	width: 680px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo-numbers__item-number
+{
+	font-family: $krisis-medium-font;
+	font-size: 120px;
+	line-height: 80px;
+}
+
+.promo-numbers__item-descr
+{
+	font-family: $accent-font;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: bold;
+}

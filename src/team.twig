@@ -1,0 +1,120 @@
+{# news-list.twig #}
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'team' %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Our Team', 'bgPrefix': 'team', 'wrapModifier': 'private-clients-banner__wrap--center'} %}
+	<h2 class="team__title">
+		ITI Capital is delighted to introduce you to each member of the Private Clients team
+	</h2>
+	{% include "./blocks/our-people.twig" with {'modifier': 'our-people--page'} %}
+{% endblock %}
+
+{% block footer %}
+	<footer class="footer footer--short footer--disclaimer">
+		<div class="footer-disclaimer">
+			<div class="footer-disclaimer__left">
+				<div class="g-section-title">
+					Disclaimer
+				</div>
+
+				<div class="g-typography">
+					<p>
+						All trading involves risk. This is especially true for trading with complex products, such as Derivatives and CFDs. It’s up to you to make sure you understand the instruments themselves, how they work and the risks you take. You could lose significantly more than you invest. Always consider your financial situation and level of experience before trading any ITI Capital Ltd product.
+					</p>
+
+					<p>
+						We strive for 100% accuracy but just like everyone else we’re human, so ITI Capital Ltd assumes no liability for errors, inaccuracies or omissions, and can’t guarantee accuracy in any of our online or offline materials.
+					</p>
+
+					<p>
+						This website contains only generalised information, it is not advice and is not directed specifically to you or your client’s goals, requirements or financial circumstances.
+					</p>
+
+					<p>
+						Please read our <a href="https://iticapital.com/terms-and-conditions.html">Terms and Conditions</a> before you start trading.
+					</p>
+
+					<p>
+						ITI Capital Ltd is a registered company in England and Wales (registration no. 02926252), authorised and regulated in the UK by the FCA (registration no. 1z71487), and is a member of the London Stock Exchange.
+					</p>
+
+					<p>
+						Registered company in England and Wales Registration Number: 02926252 VAT No: 904 4506 46. FCA Registration No. 171487 ITI Capital Limited Level 33 Tower 42, 25 Old Broad Street, London EC2N 1HQ, UK
+					</p>
+				</div>
+			</div>
+			<div class="footer-disclaimer__right">
+				<div class="g-section-title">
+					Terms & Conditions
+				</div>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/10/Terms-of-Business-Retail-Client-October-2018.pdf" class="g-link">Terms & Conditions for Private Clients</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/11/Terms-of-Business-Professonal-Nov-2018.pdf" class="g-link">Terms & Conditions Professional</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_CFD-Dec-2018.pdf" class="g-link">Key information Document (CFD)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Call-options-Dec-2018.pdf" class="g-link">Key Information Doucment (Call Options)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Put-options-Dec-2018.pdf" class="g-link">Key information Document (Put Options)</a>
+					</li>
+				</ul>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/12/ITI-Key-Information-Doc_Index-Futures-Dec-2018.pdf" class="g-link">Key Information Document (Futures)</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Best-Execution-Policy.pdf" class="g-link">Best Execution Policy</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Conflicts-of-Interest.pdf" class="g-link">Conflict of interest</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/rts-28-disclosures/" class="g-link">RTS 28 disclosures</a>
+					</li>
+				</ul>
+
+				<div class="g-section-title">
+					Other LEGAL NOTICES
+				</div>
+
+				<ul class="disclaimer-links__list">
+					<li>
+						<a href="https://iticapital.com/assets/pdf/cookies%20policy.pdf" class="g-link">Cookies</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/Rate-Card-Sept-2019.pdf" class="g-link">Rate Card</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/wp-content/uploads/2018/05/Privacy-policy_1.pdf" class="g-link">Privacy Poliсу</a>
+					</li>
+
+					<li>
+						<a href="https://iticapital.com/assets/pdf/Modern%20Slavery%20Policy%20Statement.pdf" class="g-link">Modern Slavery Act</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__copyright footer__copyright--left">
+				© iticapital.com, 1994—2020
+			</div>
+		</div>
+	</footer>
+{% endblock %}

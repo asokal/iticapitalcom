@@ -1,0 +1,19 @@
+<section class="management">
+	<div class="container">
+		<div class="g-section-title g-section-title--line management__title">Management</div>
+		<div class="management-content">
+			<div class="management-content__img">
+				{% if img %}
+				<img src="./img/{{img}}" alt="">
+				{% else %}
+				<img src="./img/person-placeholder.jpg" alt="">
+				{% endif %}
+			</div>
+			<div class="management-content-text">
+				<div class="management-content-text__title">{{name}}</div>
+				<div class="management-content-text__label">{{rank}}</div>
+				<p class="management-content-text__p">{{descr}}</p>
+			</div>
+		</div>
+	</div>
+</section>

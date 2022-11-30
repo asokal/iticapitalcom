@@ -1,0 +1,63 @@
+{% extends "layouts/short-footer-layout.twig" %}
+{% set wrapperName = 'private' %}
+
+{% block page %}
+	{% include "./blocks/priviteClientsBanner.twig" with {'title': 'Advisory', 'bgPrefix': 'advisory', 'titleModifier': 'private-clients-banner__title--white'} %}
+	<div class="container">
+		<div class="private__left">
+			<h2 class="g-page-subtitle">
+				The traditional market of retail financial advice is quite developed in the UK and Europe with approximately 10 million and 100 million people respectively having a financial adviser.
+			</h2>
+
+			<div class="g-typography">
+				<p>
+					At the same time, this is one of the most inefficient and technology poor sectors that exists. At ITI Capital we are happy to provide a new generation investment advisory service.
+				</p>
+			</div>
+		</div>
+
+		<div class="private__right">
+			{# <div class="sticky-card sticky-card--adv">
+				<div class="sticky-card__text">
+					Get a comprehensive investment advice delivered by our specialists
+				</div>
+
+				<div class="sticky-card__btn-group">
+					<a href="#" class="g-btn">
+						Get  Advice ->
+					</a>
+				</div>
+			</div> #}
+		</div>
+	</div>
+
+	<div class="private-section">
+		<div class="private-section-header">
+			<div class="private-section-header__bg">
+				<img src="./img/adv-sect-bg.jpg" alt="">
+			</div>
+
+			<div class="private-section-header__title">
+				<h2>
+					A comprehensive investment advice <br> delivered by our specialists
+				</h2>
+			</div>
+		</div>
+
+		<div class="private-section-content">
+			<div class="g-page-subtitle">
+				The traditional market of retail financial advice is quite developed in the UK and Europe with approximately 10 million and 100 million people respectively having a financial adviser.
+			</div>
+
+			<div class="g-typography">
+				<p>
+					Our tailor-made passive and active investment portfolios provide a complete piece of mind to our customers as you always know that someone is keeping an eye on your investment while you can enjoy the absolute freedom.
+				</p>
+
+				<p>
+					With the help of ITI Capital people can manage their investments, plan for retirement, save for specific goals as well as manage their ISAs. Through its partners ITI Capital also provides advice on best mortgage deals, pension transfers and arranges different kind of protection policies and help analyse expenses to structure the family budget.
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

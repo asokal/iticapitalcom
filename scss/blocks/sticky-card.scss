@@ -1,0 +1,286 @@
+.sticky-card
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 360px;
+	min-height: 384px;
+	border-top: 2px solid #EC231A;
+	background-color: #fff;
+	background-image: url('../img/sticky-card-bg.png');
+	background-size: contain;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	box-shadow: 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 100px 80px rgba(0, 0, 0, 0.04);
+	margin-left: auto;
+	z-index: 5;
+
+	&--adv, &--career
+	{
+		min-height: 297px;
+		padding: 0 37px;
+
+		.sticky-card__btn-group
+		{
+			.g-btn
+			{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&--career
+	{
+		min-height: 264px;
+	}
+
+	&--mobile
+	{
+		display: none;
+		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	&--btce
+	{
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		border: 1px solid #F2F2F2;
+		background-position: right bottom;
+		background-image: url('../img/sticky-card-bg-right.png');
+
+		.sticky-card__contact:last-child
+		{
+			margin-bottom: 0;
+		}
+	}
+	&--table
+	{
+		background-image: none;
+		background-color: #fff;
+		min-height: 200px;
+		margin-top: 100px;
+		table
+		{
+			max-width: 300px;
+			width: 100%;
+			text-align: left;
+		}
+		th
+		{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			background-color: rgba(0, 0, 0, 0.08);
+		}
+		td
+		{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+		}
+		.btcetc-grey-text
+		{
+			width: 300px;
+			text-align: left;
+		}
+	}
+	&--digital-assets
+	{
+		display: block;
+		position: fixed;
+	    border: 1px solid #F2F2F2;
+    	background-image: none;
+    	right: 83px;
+    	top: 220px;
+    	padding: 38px;
+    	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.04),
+	    	0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542),
+	    	0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443),
+	    	0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02),
+	    	0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557),
+	    	0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458);
+	    a
+	    {
+	    	display: block;
+	    	text-align: left;
+	    	font-size: 16px;
+			line-height: 26px;
+			color: #EC231A;
+			&:not(:last-child)
+			{
+				margin-bottom: 16px;
+			}
+	    }
+	}
+	&--investments
+	{
+    	background-image: none;
+		background-color: #FFF;
+		border: 1px solid #F2F2F2;
+		padding-top: 40px;
+		img
+		{
+			margin-bottom: 16px;
+			vertical-align: top;
+			&:not(:first-child)
+			{
+				margin-left: 25px;
+			}
+		}
+		.sticky-card__contact-title
+		{
+			margin-bottom: 28px;
+		}
+		.g-btn
+		{
+			margin-bottom: 40px;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.sticky-card__contact
+		{
+			&:first-child
+			{
+				.g-btn:after
+				{
+					content: '';
+					position: absolute;
+					width: 358px;
+					height: 1px;
+					background-color: #EBEBEB;
+					bottom: -44px;
+					left: -68px;
+				}
+			}
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.sticky-card__links
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: -16px;
+
+	.g-link
+	{
+		margin-bottom: 16px;
+	}
+
+	.sticky-card__contact-title
+	{
+		margin-bottom: 16px;
+		width: 100%;
+	}
+}
+
+.sticky-card__section
+{
+	width: 100%;
+	padding: 35px 40px 40px;
+	&:not(:last-child)
+	{
+		border-bottom: 1px solid #F2F2F2;
+	}
+}
+
+.sticky-card__contact
+{
+	margin-bottom: 30px;
+
+	.g-link
+	{
+		font-size: 21px;
+	}
+
+	&:last-child
+	{
+		margin-bottom: 64px;
+	}
+}
+
+.sticky-card__contact-title
+{
+	font-family: $accent-font;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #656565;
+}
+
+.sticky-card__text
+{
+	font-family: $accent-font;
+	font-size: 21px;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sticky-card__btn-group
+{
+	.g-btn
+	{
+		margin-bottom: 17px;
+	}
+}
+
+.sticky-card__login
+{
+	font-family: $accent-font;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #656565;
+}
+@media (max-width: 1365px)
+{
+	.sticky-card
+	{
+		&--digital-assets
+		{
+			right: 30px;
+		}
+	}
+}
+
+
+@media (max-width: 950px)
+{
+	.sticky-card
+	{
+		&--digital-assets
+		{
+			max-width: 320px;
+		}
+	}
+}
+@media (max-width: 767px)
+{
+	.sticky-card
+	{
+		display: none;
+
+		&--mobile
+		{
+			display: flex;
+		}
+		&--digital-assets
+		{
+			position: relative;
+			display: block;
+			margin-left: 0;
+			left: 20px;
+			top: auto;
+		}
+	}
+}
