@@ -1,0 +1,84 @@
+{# page-list.twig #}
+{% extends "layouts/layout.twig" %}
+
+{% block page %}
+	<h1>ITICapital Static Page List</h1>
+	<div class="links">
+		<a href="./index.html" target="_blank">index</a>
+		<a href="./404.html" target="_blank">404</a>
+		<a href="./advisory.html" target="_blank">advisory</a>
+		<a href="./btce.html" target="_blank">btce</a>
+		<a href="./careers-item.html" target="_blank">careers item</a>
+		<a href="./careers-item-advisory.html" target="_blank">careers item advisory</a>
+		<a href="./careers-item-service.html" target="_blank">careers item service</a>
+		<a href="./cyprus.html" target="_blank">cyprus</a>
+		<a href="./deposit.html" target="_blank">deposit</a>
+		<a href="./digital.html" target="_blank">digital</a>
+		<a href="./digital-assets.html" target="_blank">digital assets</a>
+		<a href="./disclaimer-important.html" target="_blank">disclaimer important</a>
+		<a href="./disclaimer-rates.html" target="_blank">disclaimer rates</a>
+		<a href="./disclaimer-rts28.html" target="_blank">disclaimer rts28</a>
+		<a href="./disclaimer-terms.html" target="_blank">disclaimer terms</a>
+		<a href="./faq.html" target="_blank">faq</a>
+		<a href="./fx.html" target="_blank">fx</a>
+		<a href="./group-page.html" target="_blank">group-page</a>
+		<a href="./institutional.html" target="_blank">institutional</a>
+		<a href="./investments.html" target="_blank">investments</a>
+		<a href="./kazakhstan.html" target="_blank">kazakhstan</a>
+		<a href="./margin-lending.html" target="_blank">margin lending</a>
+		<a href="./news-article.html" target="_blank">news article</a>
+		<a href="./news-list.html" target="_blank">news list</a>
+		<a href="./news-list-second.html" target="_blank">news list second</a>
+		<a href="./qatar.html" target="_blank">qatar</a>
+		<a href="./team.html" target="_blank">team</a>
+		<a href="./tech.html" target="_blank">tech</a>
+		<a href="./trading.html" target="_blank">trading</a>
+		<a href="./trading-platforms.html" target="_blank">trading platforms</a>
+	</div>
+
+	<style>
+		body
+		{
+			padding-top: 0 !important;
+		}
+
+		h1
+		{
+			text-align: center;
+			margin: 20px;
+		}
+
+		.header, footer, .cookie
+		{
+			display: none;
+		}
+
+		.links
+		{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			/* flex-wrap: wrap; */
+			align-items: center;
+			width: 500px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.links a
+		{
+			border-bottom: 1px solid transparent;
+			margin-bottom: 20px;
+			font-size: 24px;
+			text-transform: capitalize;
+		}
+
+		.links a:hover
+		{
+			color: #EC231A;
+			border-color: #EC231A;
+		}
+	</style>
+{% endblock %}
