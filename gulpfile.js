@@ -1,23 +1,15 @@
-var gulp             = require('gulp'),
-	sass             = require('gulp-sass'),
+const gulp           = require('gulp'),
+	sass             = require('gulp-sass')(require('sass')),
 	browserSync      = require('browser-sync'),
 	concat           = require('gulp-concat'),
 	uglify           = require('gulp-uglify'),
-	cssnano          = require('gulp-cssnano'),
-	rename           = require('gulp-rename'),
-	del              = require('del'),
 	imagemin         = require('gulp-imagemin'),
 	cache            = require('gulp-cache'),
 	autoprefixer     = require('gulp-autoprefixer'),
 	babel            = require('gulp-babel'),
-	imageminZopfli   = require('imagemin-zopfli'),
-	imageminGiflossy = require('imagemin-giflossy'),
 	plumber          = require('gulp-plumber'),
 	twig             = require('gulp-twig'),
-	gulpif           = require('gulp-if'),
 	htmlbeautify     = require('gulp-html-beautify'),
-	cheerio          = require('gulp-cheerio')
-	path             = require('path'),
 	gcmq             = require('gulp-group-css-media-queries');
 
 // таск для компиляции scss в css
@@ -31,7 +23,7 @@ gulp.task('sass', () => {
 });
 
 // файлы для сборки
-var jsFiles = [
+const jsFiles = [
 	'js/vendors/jquery-3.4.1.min.js',
 	'js/vendors/slick.min.js',
 	'js/vendors/sticky.min.js',
@@ -67,7 +59,7 @@ gulp.task('scripts-build', () => {
 
 // приводим впорядок скомпилированный код
 gulp.task('htmlbeautify', () => {
-	var options = {
+	const options = {
 		indentSize: 4,
 		unformatted: [
 			// https://www.w3.org/TR/html5/dom.html#phrasing-content
@@ -86,7 +78,7 @@ gulp.task('htmlbeautify', () => {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('twig', function () {
+gulp.task('twig', () => {
 	return gulp.src(['./src/*.twig'])
 	// Stay live and reload on error
 	.pipe(plumber())
@@ -114,7 +106,7 @@ gulp.task('browser-sync', () => {
 });
 
 // таск следит за изменениями файлов и вызывает другие таски
-gulp.task('watch', function() {
+gulp.task('watch', () => {
 	gulp.watch('scss/**/*.scss', gulp.parallel('sass'));
 	gulp.watch('src/**/*.twig', gulp.parallel('twig'));
 	gulp.watch(['js/vendors/*.js', 'js/*.js', '!js/main.min.js', 'js/modules/*.js'], gulp.parallel('scripts'));
@@ -128,30 +120,21 @@ gulp.task('img', () => {
 	return gulp.src(['img/*.png', 'img/*.jpg']) // откуда брать картинки
 	.pipe(cache(
 		imagemin([
-
-			pngquant({
-				speed: 1,
-				quality: 80 //lossy settings
-			}),
-			imageminZopfli({
-				more: true,
-				iterations: 10 // very slow but more effective
-			}),
 			//jpg lossless
 			imagemin.jpegtran({
 				progressive: true
 			}),
-			//jpg very light lossy, use vs jpegtran
-			imageminMozjpeg({
-				quality: 85
-			})
+			imagemin.optipng(),
 		])
 	))
 	.pipe(gulp.dest('img/')) // куда класть сжатые картинки
 });
 
 // сборка проекта
-gulp.task('build', gulp.series('sass', 'twig', 'scripts-build', 'img', () => { console.log('builded');}))
+gulp.task('build', (cb) => {
+	gulp.series('sass', 'twig', 'scripts-build', 'img', () => { console.log('builded');})
+	cb();
+})
 
 // основной таск, который запускает вспомогательные
 gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass', 'twig', 'scripts', () => { console.log('dev start');}));
