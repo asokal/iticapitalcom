@@ -6,8 +6,6 @@ GitHub Pages: [asokal.github.io/iticapitalcom](https://asokal.github.io/iticapit
 
 Сборщик Gulp, шаблонизатор Twig, препроцессор SCSS, JS(ES5) + библиотека JQuery.
 
-Если при инсталляции пакетов или запуске Gulp всплывает ошибка node-sass - переключите node на версию 14.
-
 ## Project Setup
 
 ```sh
